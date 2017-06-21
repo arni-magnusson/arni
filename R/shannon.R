@@ -19,15 +19,12 @@ shannon <- function(x, bounded=TRUE)
   if(length(x) < 2)
     return(0)
 
-  p <- x/sum(x)
+  p <- x / sum(x)
   S <- length(x)
 
   Hprime <- -sum(p*log(p))
 
-  if(bounded)
-    output <- Hprime / log(S)
-  else
-    output <- Hprime
+  index <- if(bounded) Hprime/log(S) else Hprime
 
-  output
+  index
 }
