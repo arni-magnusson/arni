@@ -22,6 +22,6 @@ export <- function(x)
   if(is.table(x))
     x <- as.data.frame(unclass(x))
 
-  print(x, row.names=FALSE)
+  print(x, right=FALSE, row.names=FALSE)
   invisible(x)
 }
