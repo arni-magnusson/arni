@@ -32,7 +32,7 @@ is.prime <- function(n, verbose=FALSE)
     }
 
     div <- 3
-    while(div < sqrt(n))  # test odd numbers from 3 to sqrt(n)
+    while(div <= sqrt(n))  # test odd numbers from 3 to sqrt(n)
     {
       if(n%%div == 0)
       {
