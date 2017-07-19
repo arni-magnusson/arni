@@ -4,17 +4,19 @@
 \alias{u}
 \title{Update Packages}
 \usage{
-u(...)
+u(lib.loc = .libPaths()[1], ...)
 }
 \arguments{
+\item{lib.loc}{library to update.}
+
 \item{\dots}{passed to \code{update.packages}.}
 }
 \value{
 \code{NULL}, but packages are updated.
 }
 \description{
-Update packages.
+Update packages in user library.
 }
 \note{
-Shorthand for \code{update.packages}.
+Shorthand for \code{update.packages(.libPaths()[1])}.
 }
