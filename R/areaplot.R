@@ -75,6 +75,7 @@ areaplot <- function(x, ...)
 
 #' @rdname areaplot
 #' @export
+#' @export areaplot.default
 
 areaplot.default <- function(x, y=NULL, prop=FALSE, add=FALSE, xlab=NULL,
                              ylab=NULL, col=NULL, ...)
@@ -160,6 +161,7 @@ areaplot.default <- function(x, y=NULL, prop=FALSE, add=FALSE, xlab=NULL,
 
 #' @rdname areaplot
 #' @export
+#' @export areaplot.formula
 
 areaplot.formula <- function (formula, data, subset, na.action=NULL, ...)
 {

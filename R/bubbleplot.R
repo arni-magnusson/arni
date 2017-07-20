@@ -42,6 +42,7 @@ bubbleplot <- function(x, ...)
 
 #' @rdname bubbleplot
 #' @export
+#' @export bubbleplot.default
 
 bubbleplot.default <- function(x, y, z, std=TRUE, pow=0.5, add=FALSE, rev=FALSE,
                                type="p", ylim=NULL, xlab=NULL, ylab=NULL,
@@ -87,6 +88,7 @@ bubbleplot.default <- function(x, y, z, std=TRUE, pow=0.5, add=FALSE, rev=FALSE,
 
 #' @rdname bubbleplot
 #' @export
+#' @export bubbleplot.formula
 
 bubbleplot.formula <- function(formula, data, subset, na.action=NULL, ...)
 {
