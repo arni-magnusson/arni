@@ -1,6 +1,6 @@
 #' Violin Plot
 #'
-#' Draw violin plot (wavy boxplot, made of symmetric densityplot).
+#' Draw violin plot, a wavy boxplot made of symmetric density plots.
 #'
 #' @param x a vector or data frame.
 #' @param \dots passed to polygon.
@@ -9,14 +9,15 @@
 #' @param names a vector of x-axis tick labels.
 #' @param pars [not supported].
 #'
-#' Ignores many standard graphical arguments, so axis labels should
-#' be added afterwards.
+#' @return
+#' Invisible vector of midpoints, useful for adding to the plot.
+#'
+#' @note
+#' Ignores many standard graphical arguments, so axis labels should be added
+#' afterwards.
 #'
 #' @author
 #' John Verzani, with minor changes by Arni Magnusson.
-#'
-#' @return
-#' Vector of midpoints, useful for adding to the plot.
 #'
 #' @seealso
 #' \pkg{vioplot} package that doesn't support lists.

@@ -18,16 +18,17 @@ vioplot2(x, ..., orientation = "vertical", bw = "nrd0", names = NULL,
 
 \item{names}{a vector of x-axis tick labels.}
 
-\item{pars}{[not supported].
-
-Ignores many standard graphical arguments, so axis labels should
-be added afterwards.}
+\item{pars}{[not supported].}
 }
 \value{
-Vector of midpoints, useful for adding to the plot.
+Invisible vector of midpoints, useful for adding to the plot.
 }
 \description{
-Draw violin plot (wavy boxplot, made of symmetric densityplot).
+Draw violin plot, a wavy boxplot made of symmetric density plots.
+}
+\note{
+Ignores many standard graphical arguments, so axis labels should be added
+afterwards.
 }
 \seealso{
 \pkg{vioplot} package that doesn't support lists.
