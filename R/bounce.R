@@ -26,7 +26,7 @@ bounce <- function(n=5000, init=c(3,1), vel=c(0.03,0.04), xlim=c(0,10),
   vx <- vel[1]
   vy <- vel[2]
 
-  for(n in 1:n)
+  for(i in 1:n)
   {
     if(x+vx<=xlim[1] || x+vx>=xlim[2])
       vx <- -vx
