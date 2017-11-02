@@ -27,6 +27,7 @@
 #'
 #' Warning: Zero values are treated as \code{NA}.
 #'
+#' @importFrom graphics matplot
 #' @importFrom stats xtabs
 #'
 #' @export

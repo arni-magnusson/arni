@@ -22,7 +22,7 @@
 #' @seealso
 #' \pkg{vioplot} package that doesn't support lists.
 #'
-#' @importFrom graphics box plot.window
+#' @importFrom graphics box plot.window polygon
 #' @importFrom grDevices rainbow
 #'
 #' @export

@@ -18,7 +18,7 @@
 #' @return
 #' \code{NULL}, but arrowhead is drawn.
 #'
-#' @importFrom graphics xyinch
+#' @importFrom graphics polygon xyinch
 #'
 #' @export
 
