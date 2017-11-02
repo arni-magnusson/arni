@@ -1,12 +1,11 @@
 Package: arni
-Version: 17.7-21
-Date: 2017-07-21
+Version: 17.10-9
+Date: 2017-10-09
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"),
   email="arni.magnusson@ices.dk"))
 Imports: graphics, lattice, methods, stats, tools, utils,
   coda, ellipse, gdata, gmt, maps
-Suggests: MASS
 Description: A collection of handy tools.
 License: GPL (>= 2)
 RoxygenNote: 6.0.1
