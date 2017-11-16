@@ -27,3 +27,8 @@ Cartesian coordinates.
 Possible applications: current or tow direction, time of year, time of day,
 color hue.
 }
+\examples{
+# Average of NNW and NNE is north
+avgAngle(c(0.875, 0.125))
+
+}
