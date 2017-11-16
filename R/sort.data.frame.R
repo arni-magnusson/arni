@@ -20,6 +20,7 @@
 #' Data frame containing sorted data.
 #'
 #' @export
+#' @export sort.data.frame
 
 sort.data.frame <- function(x, decreasing=NULL, by=seq_along(x),
                             na.last=TRUE, ...)
