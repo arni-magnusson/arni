@@ -30,13 +30,13 @@ eps2pdf <- function(epsfile, margin=3)
     stderr <- tempfile(); on.exit(unlink(stderr), add=TRUE)  # stderr -> bbox
     system(paste("gs -dBATCH -dEPSCrop -dNOPAUSE -sDEVICE=bbox", epsfile,
                  "1>", stdout, "2>", stderr))
-    tight <- readLines(stderr)
+    tight <- readLines(stderr, encoding="latin1")  # R postscripts are latin1
     numbers <- substring(tight[substring(tight,1,14)=="%%BoundingBox:"], 16)
     ## E.g. 8 8 70 70
     numbers <- paste(as.numeric(unlist(strsplit(numbers," ")))+
                          c(-margin,-margin,+margin,+margin),collapse=" ")
     ## E.g. 5 5 73 73
-    master <- readLines(epsfile)
+    master <- readLines(epsfile, encoding="latin1")
     master[substring(master,1,14)=="%%BoundingBox:"] <- paste("%%BoundingBox:",
                                                               numbers)
     write(master, epsfile)
