@@ -4,14 +4,14 @@
 #'
 #' @param x a numeric vector.
 #' @param method either \code{"uniform"} (range 0-1), \code{"student"} (mean 0,
-#'        sd 1), or \code{"relative"} (mean 1).
+#'        sd 1), or \code{"relative"} (mean 1, original cv).
 #'
 #' @note
 #' For example, \code{c(10,20,30)} becomes:
-#' \tabular{llll}{
-#'   uniform  \tab 0   \tab 0.5 \tab 1\cr
-#'   student  \tab -1  \tab 0   \tab 1\cr
-#'   relative \tab 0.5 \tab 1   \tab 1.5
+#' \preformatted{
+#' uniform    0.0  0.5  1.0
+#' student   -1.0  0.0  1.0
+#' relative   0.5  1.0  1.5
 #' }
 #'
 #' @seealso
