@@ -10,7 +10,7 @@
 #' Old epsfile is overwritten.
 #'
 #' Similar EPS files can become misaligned when tightened, depending on whether
-#' text has descenders.
+#' text has descenders, etc.
 #'
 #' Requires shell script \code{2pdf} and Ghostscript.
 #'
