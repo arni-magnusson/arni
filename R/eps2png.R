@@ -28,7 +28,7 @@ eps2png <- function(epsfile, dpi=300, gray=FALSE, ag=4, at=4)
                 paste("-a", ag, "-b", at, "-d", dpi, if(gray) "-g")
   png.cmd <- paste("2png", png.args, epsfile)
   pngfile <- paste0(file_path_sans_ext(epsfile), ".png")
-  opt.cmd <- paste("optipng", pngfile)
+  opt.cmd <- paste("optipng -strip all", pngfile)
 
   system(png.cmd)
   system(opt.cmd)
