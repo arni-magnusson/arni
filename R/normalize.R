@@ -26,12 +26,9 @@ normalize <- function(x, method="uniform")
 {
   method <- match.arg(method, c("uniform","relative","student"))
 
-  if(method == "uniform")
-    y <- (x-min(x,na.rm=TRUE)) / (max(x,na.rm=TRUE)-min(x,na.rm=TRUE))
-  else if(method == "student")
-    y <- (x-mean(x,na.rm=TRUE)) / sd(x,na.rm=TRUE)
-  else if(method == "relative")
-    y <- x / mean(x,na.rm=TRUE)
-
-  y
+  switch(
+    method,
+    uniform = (x-min(x,na.rm=TRUE)) / (max(x,na.rm=TRUE)-min(x,na.rm=TRUE)),
+    student = (x-mean(x,na.rm=TRUE)) / sd(x,na.rm=TRUE),
+    relative = x / mean(x,na.rm=TRUE))
 }
