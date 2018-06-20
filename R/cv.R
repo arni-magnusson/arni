@@ -14,5 +14,5 @@
 
 cv <- function (x, na.rm=FALSE)
 {
-  sd(x,na.rm=na.rm) / mean(x,na.rm=na.rm)
+  sd(x,na.rm=na.rm) / abs(mean(x,na.rm=na.rm))
 }
