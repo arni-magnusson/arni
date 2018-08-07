@@ -4,8 +4,8 @@
 \alias{p.arrows}
 \title{Arrows with Solid Heads}
 \usage{
-p.arrows(x1, y1, x2, y2, size = 1, width = (sqrt(5) - 1)/4/cin, fill = 2,
-  border = NULL, ...)
+p.arrows(x1, y1, x2, y2, size = 1, width = (sqrt(5) - 1)/4/cin,
+  fill = 2, border = NULL, ...)
 }
 \arguments{
 \item{x1}{x start coordinates.}
