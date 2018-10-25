@@ -14,6 +14,9 @@
 #'
 #' Scale the y axis by multiplying \code{a} and \code{b} by same amount.
 #'
+#' @seealso
+#' \code{\link{bevholt.h}}, \code{\link{bevholt.Rmax}}.
+#'
 #' @export
 
 bevholt <- function(S, a, b)

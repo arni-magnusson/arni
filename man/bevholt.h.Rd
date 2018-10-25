@@ -29,3 +29,6 @@ Calculate Beverton-Holt recruitment (Francis formulation).
 Formulation from Francis (1992, p. 929), where steepness is relative
 recruitment at \code{0.2*B0}.
 }
+\seealso{
+\code{\link{bevholt}}, \code{\link{bevholt.Rmax}}.
+}

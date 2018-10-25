@@ -24,3 +24,6 @@ Formulation from Haddon (2001, Eq. 9.2, p. 252).
 
 Scale the y axis with \code{Rmax}.
 }
+\seealso{
+\code{\link{bevholt}}, \code{\link{bevholt.h}}.
+}

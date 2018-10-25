@@ -24,3 +24,6 @@ Formulation from Hilborn and Walters (1992, Eq. 7.5.3, p. 258).
 
 Scale the y axis by multiplying \code{a} and \code{b} by same amount.
 }
+\seealso{
+\code{\link{bevholt.h}}, \code{\link{bevholt.Rmax}}.
+}
