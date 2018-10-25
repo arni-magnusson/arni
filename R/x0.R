@@ -11,7 +11,8 @@
 #' In a logistic glm(family=binomial), the x intercept corresponds to the LD50
 #'   inflection point.
 #'
-#' Warning: In reality, the uncertainty about the x intercept is asymmetric.
+#' @section Warning:
+#' In reality, the uncertainty about the x intercept is asymmetric.
 #'
 #' The delta method SE approximation is inaccurate when the slope is close to
 #' zero.

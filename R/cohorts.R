@@ -25,7 +25,8 @@
 #' column 2 the age, and column 3 the value. If \code{x} is crosstabbed, rows
 #' must be years and columns must be age.
 #'
-#' Warning: Zero values are treated as \code{NA}.
+#' @section Warning:
+#' Zero values are treated as \code{NA}.
 #'
 #' @importFrom graphics matplot
 #' @importFrom stats xtabs

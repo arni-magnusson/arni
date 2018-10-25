@@ -27,9 +27,10 @@
 #' Ghostscript-redistilled document is smaller while retaining intact images and
 #' no red borders around links
 #'
-#' Warning: The final Ghostscript redistillation is launched with
-#' \code{wait = FALSE}, so the best way to see if it is finished is to check if
-#' any Ghostscript processes are active.
+#' @section Warning:
+#' The final Ghostscript redistillation is launched with \code{wait = FALSE}, so
+#' the best way to see if it is finished is to check if any Ghostscript
+#' processes are active.
 #'
 #' @importFrom tools file_path_sans_ext
 #' @importFrom graphics frame

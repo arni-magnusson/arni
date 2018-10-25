@@ -36,8 +36,11 @@ After this function is called, one should check \file{out.pdf} to see whether
 pages are correctly numbered, and \file{out_.pdf} to see whether the
 Ghostscript-redistilled document is smaller while retaining intact images and
 no red borders around links
-
-Warning: The final Ghostscript redistillation is launched with
-\code{wait = FALSE}, so the best way to see if it is finished is to check if
-any Ghostscript processes are active.
 }
+\section{Warning}{
+
+The final Ghostscript redistillation is launched with \code{wait = FALSE}, so
+the best way to see if it is finished is to check if any Ghostscript
+processes are active.
+}
+

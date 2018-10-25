@@ -23,8 +23,10 @@ The standard error is evaluated using delta method approximation.
 
 In a logistic glm(family=binomial), the x intercept corresponds to the LD50
   inflection point.
+}
+\section{Warning}{
 
-Warning: In reality, the uncertainty about the x intercept is asymmetric.
+In reality, the uncertainty about the x intercept is asymmetric.
 
 The delta method SE approximation is inaccurate when the slope is close to
 zero.
@@ -32,3 +34,4 @@ zero.
 Clearly, the x intercept SE is infinity when the slope is not significantly
 different from zero.
 }
+

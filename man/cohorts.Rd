@@ -42,6 +42,9 @@ create a plot.
 If \code{x} is a three column data frame, column 1 must contain the year,
 column 2 the age, and column 3 the value. If \code{x} is crosstabbed, rows
 must be years and columns must be age.
-
-Warning: Zero values are treated as \code{NA}.
 }
+\section{Warning}{
+
+Zero values are treated as \code{NA}.
+}
+
