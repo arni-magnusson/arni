@@ -17,7 +17,8 @@ bubbleplot(x, ...)
   ...)
 }
 \arguments{
-\item{x}{a vector of values for the horizontal axis.}
+\item{x}{a vector of values for the horizontal axis, or a data frame
+containing \code{x}, \code{y}, and \code{z} in that order.}
 
 \item{\dots}{passed to \code{bubbleplot.*} methods.}
 

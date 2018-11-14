@@ -2,7 +2,8 @@
 #'
 #' Draw bubble plot, a scatterplot with varying symbol sizes and colors.
 #'
-#' @param x a vector of values for the horizontal axis.
+#' @param x a vector of values for the horizontal axis, or a data frame
+#'        containing \code{x}, \code{y}, and \code{z} in that order.
 #' @param y a vector of values for the vertical axis.
 #' @param z a vector of values determining the bubble sizes.
 #' @param std whether to standardize \code{z} by dividing with \code{mean(z)}.

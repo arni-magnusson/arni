@@ -1,4 +1,4 @@
-#' Uppercase Words
+#' Capitalize Words
 #'
 #' Make every word in string start in uppercase.
 #'
@@ -6,11 +6,14 @@
 #' @param strict whether existing uppercase letters should be lowercased.
 #'
 #' @note
-#' Based on example in \code{help(chartr)}. Better than
-#'   \code{Hmisc::capitalize()}.
+#' Based on example in \code{help(chartr)}. Better for multi-word strings than
+#' \code{Hmisc::capitalize}.
 #'
 #' @return
 #' String with every word starting in uppercase.
+#'
+#' @seealso
+#' \code{\link{toTitleCase}} does not capitalize all words.
 #'
 #' @export
 

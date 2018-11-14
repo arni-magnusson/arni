@@ -2,7 +2,7 @@
 % Please edit documentation in R/capitalize.R
 \name{capitalize}
 \alias{capitalize}
-\title{Uppercase Words}
+\title{Capitalize Words}
 \usage{
 capitalize(x, strict = TRUE)
 }
@@ -18,6 +18,9 @@ String with every word starting in uppercase.
 Make every word in string start in uppercase.
 }
 \note{
-Based on example in \code{help(chartr)}. Better than
-  \code{Hmisc::capitalize()}.
+Based on example in \code{help(chartr)}. Better for multi-word strings than
+\code{Hmisc::capitalize}.
+}
+\seealso{
+\code{\link{toTitleCase}} does not capitalize all words.
 }

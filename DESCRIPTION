@@ -1,6 +1,6 @@
 Package: arni
-Version: 18.10-25
-Date: 2018-10-25
+Version: 18.11-14
+Date: 2018-11-14
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"),
   email="arni.magnusson@ices.dk"))
@@ -9,4 +9,4 @@ Imports: graphics, lattice, methods, stats, tools, utils,
 Description: A collection of handy tools.
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
