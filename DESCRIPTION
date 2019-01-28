@@ -1,6 +1,6 @@
 Package: arni
-Version: 18.11-26
-Date: 2018-11-26
+Version: 19.1-28
+Date: 2019-01-28
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"),
   email="arni.magnusson@ices.dk"))
