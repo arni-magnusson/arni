@@ -5,11 +5,9 @@
 #' @param x a numeric vector.
 #' @param na.rm whether \code{NA} values should be stripped.
 #'
-#' @note
-#' \code{RSS = ss0(resid)}, not \code{ssmean(resid)}.
+#' @return Sum of squared values, as a single number.
 #'
-#' @return
-#' Sum of squared values, as a single number.
+#' @note \code{RSS = ss0(resid)}, not \code{ssmean(resid)}.
 #'
 #' @export
 

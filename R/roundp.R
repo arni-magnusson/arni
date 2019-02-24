@@ -10,6 +10,10 @@
 #'        the algorithm to use.
 #' @param labels an optional vector of labels.
 #'
+#' @return
+#' Numeric vector of same length as \code{x}, with rounded proportions whose sum
+#' is 1 (or integers whose sum is \code{seats}).
+#'
 #' @note
 #' This function should be called either with a \code{digits} argument, or with
 #' a \code{seats} argument, not both.
@@ -23,10 +27,6 @@
 #'   \code{"SL"}  \tab (Sainte-Lague) does not favor big or small parties - used
 #'                     in New Zealand, Bosnia, and Latvia
 #' }
-#'
-#' @return
-#' Numeric vector of same length as \code{x}, with rounded proportions whose sum
-#' is 1 (or integers whose sum is \code{seats}).
 #'
 #' @export
 

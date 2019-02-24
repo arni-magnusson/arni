@@ -6,8 +6,7 @@
 #' @param na.rm whether \code{NA} values should be stripped before the
 #'        computation proceeds.
 #'
-#' @return
-#' Geometric mean as a vector.
+#' @return Geometric mean as a vector.
 #'
 #' @export
 

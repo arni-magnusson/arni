@@ -7,14 +7,13 @@
 #' @param labels a vector of three strings, used as column names for the
 #'        resulting data frame.
 #'
+#' @return Data frame (3 cols) that can be crosstabbed to look like \code{x}.
+#'
 #' @note
 #' Use dimnames like \code{"1990"} instead of \code{"Year1990"} for numeric
 #' entries in resulting data frame.
 #'
 #' Another approach is \code{as.data.frame(as.table(as.matrix(x)))}.
-#'
-#' @return
-#' Data frame (3 cols) that can be crosstabbed to look like \code{x}.
 #'
 #' @export
 

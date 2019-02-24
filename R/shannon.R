@@ -5,11 +5,10 @@
 #' @param x a frequency vector, one value per species.
 #' @param bounded whether to bound the index between 0 and 1.
 #'
+#' @return Species diversity as a number.
+#'
 #' @seealso
 #' \code{\link{yule}}.
-#'
-#' @return
-#' Species diversity as a number.
 #'
 #' @export
 

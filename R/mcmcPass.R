@@ -14,6 +14,8 @@
 #'   \code{"string"} \tab a string indicating which tests failed
 #' }
 #'
+#' @return Test results in the format specified by \code{return.type}.
+#'
 #' @note
 #' The test criteria are:
 #' \enumerate{
@@ -23,9 +25,6 @@
 #' }
 #'
 #' Users can apply other criteria by requesting \code{return.type = "list"}.
-#'
-#' @return
-#' Test results in the format specified by \code{return.type}.
 #'
 #' @importFrom coda geweke.diag heidel.diag
 #' @importFrom stats acf cor var

@@ -4,12 +4,11 @@
 #'
 #' @param x a vector, matrix, table, or data frame.
 #'
+#' @return Data frame representation of \code{x}.
+#'
 #' @note
 #' Useful for copying data from the console to a text editor or spreadsheet
 #' without \verb{[1,]} indicators.
-#'
-#' @return
-#' Data frame representation of \code{x}.
 #'
 #' @export
 

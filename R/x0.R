@@ -5,6 +5,10 @@
 #' @param model a fitted lm or glm of the form \code{y~x}.
 #' @param se whether to report the standard error.
 #'
+#' @return
+#' List containing \code{est} (estimated x intercept) and \code{se} (standard
+#' error), or if \code{se = FALSE} a simple number.
+#'
 #' @note
 #' The standard error is evaluated using delta method approximation.
 #'
@@ -19,10 +23,6 @@
 #'
 #' Clearly, the x intercept SE is infinity when the slope is not significantly
 #' different from zero.
-#'
-#' @return
-#' List containing \code{est} (estimated x intercept) and \code{se} (standard
-#' error), or if \code{se = FALSE} a simple number.
 #'
 #' @importFrom stats coef vcov
 #'

@@ -8,11 +8,9 @@
 #' @param ag antialias value for graphics, from 0 (sharp) and 4 (smooth).
 #' @param at antialias value for text, from 0 (sharp) and 4 (smooth).
 #'
-#' @note
-#' Requires shell scripts \code{2png} and \code{optipng}.
+#' @return \code{NULL}, but alters EPS file and creates PDF file.
 #'
-#' @return
-#' \code{NULL}, but alters EPS file and creates PDF file.
+#' @note Requires shell scripts \code{2png} and \code{optipng}.
 #'
 #' @export
 

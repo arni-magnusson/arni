@@ -5,11 +5,9 @@
 #' @param name a function, quoted or unquoted.
 #' @param \dots passed to \code{edit}.
 #'
-#' @note
-#' Based on \code{eip} in package \pkg{Hmisc}.
+#' @return A copy of the updated function.
 #'
-#' @return
-#' A copy of the updated function.
+#' @note Based on \code{eip} in package \pkg{Hmisc}.
 #'
 #' @importFrom utils edit find
 #'

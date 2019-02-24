@@ -4,8 +4,7 @@
 #'
 #' @param x a table.
 #'
-#' @return
-#' Data frame with same data as \code{x}.
+#' @return Data frame with same data as \code{x}.
 #'
 #' @export
 

@@ -4,11 +4,9 @@
 #'
 #' @param x a vector of dates, of class \code{Date} or \code{POSIXt}.
 #'
-#' @note
-#' Use \code{months} to extract month name instead.
+#' @return Vector of months as integers.
 #'
-#' @return
-#' Vector of months as integers.
+#' @note Use \code{months} to extract month name instead.
 #'
 #' @export
 

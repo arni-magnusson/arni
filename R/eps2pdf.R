@@ -6,6 +6,8 @@
 #' @param margin number of points between ink and the edge of the page, or
 #'        \code{NULL} to skip tightening.
 #'
+#' @return \code{NULL}, but alters EPS file and creates PDF file.
+#'
 #' @note
 #' Old epsfile is overwritten.
 #'
@@ -13,9 +15,6 @@
 #' text has descenders, etc.
 #'
 #' Requires shell script \code{2pdf} and Ghostscript.
-#'
-#' @return
-#' \code{NULL}, but alters EPS file and creates PDF file.
 #'
 #' @export
 

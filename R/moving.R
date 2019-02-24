@@ -15,6 +15,8 @@
 #'   on one side
 #' }
 #'
+#' @return Vector of same length as \code{x}, containing weighted averages.
+#'
 #' @note
 #' If \code{k} is an even number, a weighted average is used with half weights
 #' on each end.
@@ -23,9 +25,6 @@
 #' line will have bent ends...
 #'
 #' @seealso \code{\link[caTools]{runmean}}.
-#'
-#' @return
-#' Vector of same length as \code{x}, containing weighted averages.
 #'
 #' @importFrom stats weighted.mean
 #'

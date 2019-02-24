@@ -13,7 +13,7 @@ xopt(model, se = TRUE)
 }
 \value{
 List containing \code{est} (estimated optimal x) and \code{se} (standard
-  error), or if \code{se = FALSE} a simple number.
+error), or if \code{se = FALSE} a simple number.
 }
 \description{
 Evaluate the optimal x and its SE in a quadratic LM.
@@ -22,7 +22,7 @@ Evaluate the optimal x and its SE in a quadratic LM.
 The standard error is evaluated using delta method approximation.
 
 The optimal x is the peak or bottom of the quadratic curve. See p. 54 in
-  Magnusson (2002).
+Magnusson (2002).
 }
 \references{
 Magnusson, A. 2002. \emph{Survival rates of coho (Oncorhynchus kisutch) and

@@ -7,14 +7,14 @@
 #' @param alpha the significance level for a two-way test.
 #' @param log whether outlier detection should be performed on \code{log(x)}.
 #'
-#' @note
-#' Grubbs (1969) cited in Sokal and Rohlf (1995, p. 407), recommending sample
-#' size > 25.
-#'
 #' @return
 #' Vector like \code{x} with outliers removed, or if \code{output="outliers"}
 #' the outlier values, or if \code{output="which"} a vector indicating which
 #' elements are outliers.
+#'
+#' @note
+#' Grubbs (1969) cited in Sokal and Rohlf (1995, p. 407), recommending sample
+#' size > 25.
 #'
 #' @importFrom stats qt
 #'

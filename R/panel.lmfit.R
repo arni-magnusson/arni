@@ -8,8 +8,7 @@
 #' @param col.points point color.
 #' @param \dots passed to \code{panel.xyplot} and \code{panel.lmline}.
 #'
-#' @return
-#' \code{NULL}, but draws a scatterplot panel with line.
+#' @return \code{NULL}, but draws a scatterplot panel with line.
 #'
 #' @importFrom lattice panel.lmline panel.xyplot
 #'

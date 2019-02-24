@@ -5,8 +5,7 @@
 #' @param x is number.
 #' @param width minimum width for output string.
 #'
-#' @return
-#' Binary string.
+#' @return Binary string.
 #'
 #' @export
 

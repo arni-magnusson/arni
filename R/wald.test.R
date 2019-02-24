@@ -8,15 +8,14 @@
 #' @param conf.level a confidence level that will be used to evaluate a
 #'        confidence interval.
 #'
+#' @return List containing \code{z}, \code{p}, and \code{confint}.
+#'
 #' @note
 #' Related to t-test and z-test, commonly used in nonlinear maximum likelihood
 #' estimation.
 #'
 #' Assumes that the estimation error is normal-distributed and the standard
 #' error is known.
-#'
-#' @return
-#' List containing \code{z}, \code{p}, and \code{confint}.
 #'
 #' @export
 

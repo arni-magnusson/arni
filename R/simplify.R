@@ -4,6 +4,9 @@
 #'
 #' @param x a list, data frame, matrix, or vector.
 #'
+#' @return
+#' Object of same dimensions as \code{x}, using simplest possible storage modes.
+#'
 #' @note
 #' \verb{factor -> character -> numeric -> integer}
 #'
@@ -14,9 +17,6 @@
 #' \code{c(-2147483647, 2147483647)}.
 #'
 #' Faster than \code{type.convert(as.character(x))}.
-#'
-#' @return
-#' Object of same dimensions as \code{x}, using simplest possible storage modes.
 #'
 #' @export
 

@@ -8,8 +8,7 @@
 #'        \code{255}:0-255, \code{360}:0-360, \code{"f"}:0-f.
 #' @param bg the background color.
 #'
-#' @return
-#' \code{NULL}, but a plot is drawn.
+#' @return \code{NULL}, but a plot is drawn.
 #'
 #' @seealso
 #' \code{\link{hclDemo}}, \code{\link{rgbDemo}}.

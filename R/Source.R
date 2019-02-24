@@ -11,8 +11,7 @@
 #' @param quiet whether to suppress showing names of sourced files.
 #' @param \dots passed to \code{sys.source} when sourcing files.
 #'
-#' @return
-#' Names of sourced files, invisibly
+#' @return Names of sourced files, invisibly
 #'
 #' @export
 

@@ -6,11 +6,9 @@
 #' @param width the page width in inches.
 #' @param height the page height in inches.
 #'
-#' @note
-#' Exact size, unlike the \code{pdf} device.
+#' @return Invisible string that was written to PDF file.
 #'
-#' @return
-#' Invisible string that was written to PDF file.
+#' @note Exact size, unlike the \code{pdf} device.
 #'
 #' @export
 

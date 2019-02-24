@@ -26,8 +26,7 @@
 #' @param subset a logical vector specifying which data to plot.
 #' @param na.action how \code{NA} values are handled.
 #'
-#' @return
-#' \code{NULL}, but a bubble plot is drawn.
+#' @return \code{NULL}, but a bubble plot is drawn.
 #'
 #' @note
 #' Negative \code{z} values are drawn in \code{col[2]} and \code{bg[2]}.

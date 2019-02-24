@@ -8,11 +8,9 @@
 #' @param ylab y axis label (only used if \code{x} is a vector).
 #' @param \dots passed to plot and pairs.
 #'
-#' @note
-#' Somewhat similar to \code{plot.data.frame} in S-Plus.
+#' @return Invisible fractions, ordered from 0 to 1.
 #'
-#' @return
-#' Invisible fractions, ordered from 0 to 1.
+#' @note Somewhat similar to \code{plot.data.frame} in S-Plus.
 #'
 #' @importFrom graphics pairs
 #'

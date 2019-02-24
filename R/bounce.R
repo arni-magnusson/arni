@@ -11,8 +11,7 @@
 #' @param col point color.
 #' @param cex point size.
 #'
-#' @return
-#' \code{NULL}, but \code{n} plots are drawn.
+#' @return \code{NULL}, but \code{n} plots are drawn.
 #'
 #' @importFrom graphics plot
 #'

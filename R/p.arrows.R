@@ -12,11 +12,9 @@
 #' @param border arrowhead border color.
 #' @param \dots is passed to \code{segments}.
 #'
-#' @note
-#' Borrowed from package \code{sfsmisc}, adding \code{border} argument.
+#' @return \code{NULL}, but arrowhead is drawn.
 #'
-#' @return
-#' \code{NULL}, but arrowhead is drawn.
+#' @note Borrowed from package \code{sfsmisc}, adding \code{border} argument.
 #'
 #' @importFrom graphics polygon xyinch
 #'

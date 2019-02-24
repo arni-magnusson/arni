@@ -7,12 +7,11 @@
 #'        \code{reverse = TRUE}).
 #' @param reverse is whether to get a point point from a character.
 #'
+#' @return String vector, or integer vector if \code{reverse = TRUE}.
+#'
 #' @note
 #' Hexadecimal number can be passed as \code{0xfe} or \code{"fe"}, but not
 #' \code{"0xfe"}.
-#'
-#' @return
-#' String vector, or integer vector if \code{reverse = TRUE}.
 #'
 #' @export
 

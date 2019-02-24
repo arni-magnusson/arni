@@ -3,14 +3,13 @@
 #' Calculate Beverton-Holt recruitment (Francis formulation).
 #'
 #' @param R0 average virgin recruitment.
-#' @param h  steepness.
-#' @param M  natural mortality rate.
-#' @param mat  maturity at age.
-#' @param w  weight at age.
-#' @param B  spawning biomass.
+#' @param h steepness.
+#' @param M natural mortality rate.
+#' @param mat maturity at age.
+#' @param w weight at age.
+#' @param B spawning biomass.
 #'
-#' @return
-#' Recruitment as a number or vector.
+#' @return Recruitment as a number or vector.
 #'
 #' @note
 #' Formulation from Francis (1992, p. 929), where steepness is relative

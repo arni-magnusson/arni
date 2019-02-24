@@ -5,8 +5,7 @@
 #' @param X a matrix containing predictor values and 1 in first column.
 #' @param y a vector (or single-column matrix) containing response values.
 #'
-#' @return
-#' Single-column matrix containing the coefficients.
+#' @return Single-column matrix containing the coefficients.
 #'
 #' @seealso
 #' \code{\link{lmxy1}}.

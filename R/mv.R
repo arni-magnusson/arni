@@ -7,8 +7,7 @@
 #' @param sure whether existing object may be overwritten.
 #' @param quiet whether report should be suppressed.
 #'
-#' @return
-#' \code{NULL}, but the object is renamed.
+#' @return \code{NULL}, but the object is renamed.
 #'
 #' @export
 

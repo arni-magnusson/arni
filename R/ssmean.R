@@ -5,6 +5,8 @@
 #' @param x a numeric vector.
 #' @param na.rm whether \code{NA} values should be stripped.
 #'
+#' @return Sum of squared residuals from the mean, as a single number.
+#'
 #' @note
 #' \code{RSS = ss0(resid)}, not \code{ssmean(resid)}.
 #'
@@ -20,9 +22,6 @@
 #'
 #' Implementation 1 is used here, since the algorithm can be used in other
 #' languages.
-#'
-#' @return
-#' Sum of squared residuals from the mean, as a single number.
 #'
 #' @export
 

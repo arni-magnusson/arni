@@ -6,8 +6,7 @@
 #' @param a initial slope.
 #' @param b carrying capacity.
 #'
-#' @return
-#' Recruitment as a number or vector.
+#' @return Recruitment as a number or vector.
 #'
 #' @note
 #' Formulation from Hilborn and Walters (1992, Eq. 7.5.3, p. 258).

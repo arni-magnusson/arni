@@ -2,11 +2,10 @@
 #'
 #' Toggle whether Emacs is run with command line option \verb{-nw}.
 #'
-#' @note
-#' Useful when working over a slow SSH connection.
-#'
 #' @return
 #' Resulting \code{getOption("editor")} after adding or removing \verb{-nw}.
+#'
+#' @note Useful when working over a slow SSH connection.
 #'
 #' @export
 

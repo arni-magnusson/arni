@@ -17,8 +17,7 @@
 #' @param ylab passed to \code{matplot}.
 #' @param \dots passed to \code{matplot}.
 #'
-#' @return
-#' Crosstab table in cohort format, of class \code{c("xtabs","table")}.
+#' @return Crosstab table in cohort format, of class \code{c("xtabs","table")}.
 #'
 #' @note
 #' If \code{x} is a three column data frame, column 1 must contain the year,

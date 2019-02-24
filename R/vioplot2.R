@@ -9,8 +9,7 @@
 #' @param names a vector of x-axis tick labels.
 #' @param pars [not supported].
 #'
-#' @return
-#' Invisible vector of midpoints, useful for adding to the plot.
+#' @return Invisible vector of midpoints, useful for adding to the plot.
 #'
 #' @note
 #' Ignores many standard graphical arguments, so axis labels should be added

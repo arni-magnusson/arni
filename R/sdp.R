@@ -5,11 +5,9 @@
 #' @param x a numeric vector or the like.
 #' @param na.rm whether \code{NA} values should be stripped.
 #'
-#' @note
-#' Useful to evaluate MLE of \eqn{sigma}.
+#' @return Standard deviation, as a single number.
 #'
-#' @return
-#' Standard deviation, as a single number.
+#' @note Useful to evaluate MLE of \eqn{sigma}.
 #'
 #' @export
 

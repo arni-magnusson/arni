@@ -5,8 +5,7 @@
 #' @param col vector of colors (name, hexadecimal string, or integer).
 #' @param s saturation level.
 #'
-#' @return
-#' Vector of colors as hexadecimal string.
+#' @return Vector of colors as hexadecimal string.
 #'
 #' @importFrom grDevices col2rgb rgb2hsv
 #'

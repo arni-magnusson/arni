@@ -4,8 +4,7 @@
 #'
 #' @param x a binary string, like \code{"101"}.
 #'
-#' @return
-#' Integer.
+#' @return Integer.
 #'
 #' @export
 

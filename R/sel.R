@@ -7,18 +7,16 @@
 #' @param Sright a shape parameter for the right hand slope.
 #' @param ages a vector of ages.
 #'
+#' @return Vector of selectivity values.
+#'
 #' @note
 #' The shape parameter for each slope is log variance. Use \code{-15} for
 #' knife-edge and \code{15} for flat selectivity.
 #'
 #' @references
 #' Hilborn, R., Maunder, M., Parma, A., Ernst, B., Payne, J., and Starr, P.
-#'   2003. \emph{Coleraine: A generalized age-structured stock assessment
-#'   model. User's manual version 2.0.} University of Washington Report
-#'   SAFS-UW-0116.
-#'
-#' @return
-#' Vector of selectivity values.
+#' 2003. \emph{Coleraine: A generalized age-structured stock assessment model.
+#' User's manual version 2.0.} University of Washington Report SAFS-UW-0116.
 #'
 #' @export
 

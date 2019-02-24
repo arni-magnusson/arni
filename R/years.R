@@ -4,8 +4,7 @@
 #'
 #' @param x a vector of dates, of class \code{Date} or \code{POSIXt}.
 #'
-#' @return
-#' Vector of years as integers.
+#' @return Vector of years as integers.
 #'
 #' @export
 

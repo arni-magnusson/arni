@@ -12,11 +12,9 @@
 #' @param col.text passed to \code{text}.
 #' @param cex passed to \code{text}.
 #'
-#' @note
-#' The coordinates were inferred from official ICES maps.
+#' @return Invisible data frame with coordinates.
 #'
-#' @return
-#' Invisible data frame with coordinates.
+#' @note The coordinates were inferred from official ICES maps.
 #'
 #' @importFrom utils as.roman
 #' @importFrom maps map

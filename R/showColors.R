@@ -4,12 +4,11 @@
 #'
 #' @param cex point size.
 #'
+#' @return \code{NULL}, but colors are shown in a plot.
+#'
 #' @note
 #' Based on script presented by Kyle Ambert and Steven Bedrick in BMI 507/607,
 #' Lecture 10 (30 Oct 2009).
-#'
-#' @return
-#' \code{NULL}, but colors are shown in a plot.
 #'
 #' @importFrom graphics plot.new rect
 #' @importFrom grDevices col2rgb colors

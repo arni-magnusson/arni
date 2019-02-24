@@ -4,11 +4,9 @@
 #'
 #' @param \dots passed to \code{ls}.
 #'
-#' @note
-#' Shorthand for \code{l(all=TRUE)}.
+#' @return Names of objects or elements, as \code{noquote} vector.
 #'
-#' @return
-#' Names of objects or elements, as \code{noquote} vector.
+#' @note Shorthand for \code{l(all=TRUE)}.
 #'
 #' @export
 

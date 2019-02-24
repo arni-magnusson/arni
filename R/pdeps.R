@@ -11,8 +11,7 @@
 #' @param sort whether to sort package dependencies.
 #' @param \dots passed to \code{package_dependencies}.
 #'
-#' @return
-#' Names of packages that are required by \code{package}.
+#' @return Names of packages that are required by \code{package}.
 #'
 #' @seealso
 #' \code{\link{package_dependencies}} is the underlying base function to find

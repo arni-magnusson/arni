@@ -4,8 +4,7 @@
 #'
 #' @param x an octal string, like \code{"377"}.
 #'
-#' @return
-#' Integer.
+#' @return Integer.
 #'
 #' @export
 

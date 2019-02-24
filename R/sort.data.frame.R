@@ -10,14 +10,13 @@
 #'        alphabetical order.
 #' @param \dots ignored (S3 template).
 #'
+#' @return Data frame containing sorted data.
+#'
 #' @note
 #' Based on an S News email from Xiangyang Liu, 7 Aug 1995.
 #'
 #' As pointed out in the \verb{R-faq.pdf}, \code{x[order(x$a,-x$b),]} can also
 #' be used to sort by multiple columns.
-#'
-#' @return
-#' Data frame containing sorted data.
 #'
 #' @export
 #' @export sort.data.frame

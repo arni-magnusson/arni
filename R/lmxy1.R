@@ -5,8 +5,7 @@
 #' @param x a vector containing the predictor values.
 #' @param y a vector containing the response values.
 #'
-#' @return
-#' Vector containing the coefficients.
+#' @return Vector containing the coefficients.
 #'
 #' @seealso
 #' \code{\link{lmxy2}}.

@@ -6,12 +6,11 @@
 #' @param force whether to overwrite current row names with integers 1, 2, 3,
 #'        \dots, n.
 #'
+#' @return Same data frame, possibly with integer row names.
+#'
 #' @note
 #' The default behavior is to convert row names only if they are strings
 #' representing integers: \code{"1"}, \code{"2"}.
-#'
-#' @return
-#' Same data frame, possibly with integer row names.
 #'
 #' @export
 

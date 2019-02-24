@@ -5,8 +5,7 @@
 #' @param x a fitted loess model.
 #' @param \dots passed to \code{lines}.
 #'
-#' @return
-#' \code{NULL}, but line is added to plot.
+#' @return \code{NULL}, but line is added to plot.
 #'
 #' @export
 

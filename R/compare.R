@@ -11,6 +11,13 @@
 #' @param viewer an external program to use if \code{external=TRUE}.
 #' @param \dots is passed to \code{compare.*} methods.
 #'
+#' @return
+#' List with 4 elements:
+#' \item{both}{items found in both objects}
+#' \item{A}{items found only in A}
+#' \item{B}{items found only in B}
+#' \item{same.data}{whether objects contain the same set of items}
+#'
 #' @note
 #' Set comparison ignores duplicates and order: \code{c(1,1,2,3)} and
 #' \code{c(3,2,1)} are similar. Similarly, when comparing two functions, the
@@ -26,13 +33,6 @@
 #' \}}
 #'
 #' Data frames are compared line by line, and must have the same dimensions.
-#'
-#' @return
-#' List with 4 elements:
-#' \item{both}{items found in both objects}
-#' \item{A}{items found only in A}
-#' \item{B}{items found only in B}
-#' \item{same.data}{whether objects contain the same set of items}
 #'
 #' @export
 

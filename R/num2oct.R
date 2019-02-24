@@ -5,8 +5,7 @@
 #' @param x a number.
 #' @param width minimum width for output string.
 #'
-#' @return
-#' Octal string.
+#' @return Octal string.
 #'
 #' @export
 

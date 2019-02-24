@@ -5,11 +5,10 @@
 #' @param H a Hessian matrix.
 #' @param cor whether to return correlation matrix instead of SE.
 #'
-#' @note
-#' Covariance matrix can be useful for applying the delta method.
-#'
 #' @return
 #' Vector of standard errors, or if \code{cor = TRUE} a correlation matrix.
+#'
+#' @note Covariance matrix can be useful for applying the delta method.
 #'
 #' @export
 

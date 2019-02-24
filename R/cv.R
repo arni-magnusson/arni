@@ -5,8 +5,7 @@
 #' @param x a numeric vector.
 #' @param na.rm whether \code{NA} values should be stripped.
 #'
-#' @return
-#' Coefficient of variation as a single number.
+#' @return Coefficient of variation as a single number.
 #'
 #' @importFrom stats sd
 #'

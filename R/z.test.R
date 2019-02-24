@@ -9,6 +9,8 @@
 #' @param conf.level a confidence level that will be used to evaluate a
 #'        confidence interval.
 #'
+#' @return List containing \code{xbar}, \code{z}, \code{p}, and \code{confint}.
+#'
 #' @note
 #' Similar to t-test, but assumes that sigma is known without error.
 #'
@@ -20,9 +22,6 @@
 #'
 #' Rarely used in statistical inference, unlike the related \code{t.test} and
 #' \code{wald.test} that are commonly used.
-#'
-#' @return
-#' List containing \code{xbar}, \code{z}, \code{p}, and \code{confint}.
 #'
 #' @export
 

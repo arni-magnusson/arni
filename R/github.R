@@ -4,8 +4,7 @@
 #'
 #' @param user GitHub username.
 #'
-#' @return
-#' Vector of strings containing \code{@} sign.
+#' @return Vector of strings containing \code{@} sign.
 #'
 #' @export
 

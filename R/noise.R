@@ -7,12 +7,11 @@
 #' @param sigma standard deviation (\code{0} to \code{Inf}).
 #' @param rho autocorrelation (\code{-1} to \code{1}).
 #'
-#' @note
-#' Based on ADCAM.
-#'
 #' @return
 #' Numeric vector whose mean, standard deviation, and autocorrelation is close
 #' to \code{mu}, \code{sigma}, and \code{rho}.
+#'
+#' @note Based on ADCAM.
 #'
 #' @seealso
 #' \code{\link{rho}}.

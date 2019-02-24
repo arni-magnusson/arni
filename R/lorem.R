@@ -5,8 +5,7 @@
 #' @param n the number of paragraphs.
 #' @param par whether to insert empty string "" between paragraphs.
 #'
-#' @return
-#' Vector of strings.
+#' @return Vector of strings.
 #'
 #' @export
 

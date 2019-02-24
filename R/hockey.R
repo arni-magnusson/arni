@@ -7,12 +7,11 @@
 #' @param Smax lowest \code{S} that produces \code{Rmax}.
 #' @param eta an optional smoothness parameter, e.g. \code{0.001}.
 #'
+#' @return Recruitment as a number or vector.
+#'
 #' @note
 #' Smoothness parameter is based on Mesnil and Rochet (2010), but replacing
 #' \verb{gamma^2/4} with \verb{eta*Smax^2}.
-#'
-#' @return
-#' Recruitment as a number or vector.
 #'
 #' @export
 

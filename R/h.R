@@ -3,16 +3,14 @@
 #' Show full command history.
 #'
 #' @param max.show the number of previous commands to show (default is entire
-#'   log).
+#'        log).
 #' @param reverse whether to show lines in reverse order (not useful when there
-#'   are continuation lines).
+#'        are continuation lines).
 #' @param \dots passed to \code{history}.
 #'
-#' @note
-#' Shorthand notation for a common task.
+#' @return Shows command history in external editor.
 #'
-#' @return
-#' Shows command history in external editor.
+#' @note Shorthand notation for a common task.
 #'
 #' @importFrom utils history
 #'

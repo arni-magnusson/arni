@@ -5,12 +5,11 @@
 #' @param z a numeric vector.
 #' @param probs a vector of desired quantiles.
 #'
-#' @note
-#' Implemented and embedded in \code{cumuplot} in the \pkg{coda} package.
-#'
 #' @return
 #' Data frame containing cumulative quantiles, with samples in rows and
 #' probabilities in columns.
+#'
+#' @note Implemented and embedded in \code{cumuplot} in the \pkg{coda} package.
 #'
 #' @export
 

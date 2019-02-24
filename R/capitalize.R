@@ -5,12 +5,11 @@
 #' @param x a string (one or more words) to be formatted.
 #' @param strict whether existing uppercase letters should be lowercased.
 #'
+#' @return String with every word starting in uppercase.
+#'
 #' @note
 #' Based on example in \code{help(chartr)}. Better for multi-word strings than
 #' \code{Hmisc::capitalize}.
-#'
-#' @return
-#' String with every word starting in uppercase.
 #'
 #' @seealso
 #' \code{\link{toTitleCase}} does not capitalize all words.

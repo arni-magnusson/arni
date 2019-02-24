@@ -7,8 +7,7 @@
 #' @param digits passed to \code{round}, to make sure that
 #'        \code{avgAngle(c(0,0.5))} returns \code{NA}.
 #'
-#' @return
-#' Average angle as a number.
+#' @return Average angle as a number.
 #'
 #' @note
 #' There are several ways to define average angle; this one uses the average of

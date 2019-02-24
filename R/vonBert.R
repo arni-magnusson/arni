@@ -7,8 +7,7 @@
 #' @param K von Bertalanffy growth parameter.
 #' @param t0 von Bertalanffy growth parameter.
 #'
-#' @return
-#' Vector of predicted lengths
+#' @return Vector of predicted lengths
 #'
 #' @export
 

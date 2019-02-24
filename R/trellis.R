@@ -5,11 +5,9 @@
 #' @param color whether colors are displayed.
 #' @param \dots passed to \code{trellis.device}.
 #'
-#' @note
-#' Shorthand for \code{trellis.device(color=FALSE, ...)}.
+#' @return \code{NULL}, but a device is opened.
 #'
-#' @return
-#' \code{NULL}, but a device is opened.
+#' @note Shorthand for \code{trellis.device(color=FALSE, ...)}.
 #'
 #' @importFrom lattice trellis.device
 #'

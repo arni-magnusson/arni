@@ -6,8 +6,7 @@
 #' @param width minimum width for output string.
 #' @param upper whether to use upper case.
 #'
-#' @return
-#' Hexadecimal string.
+#' @return Hexadecimal string.
 #'
 #' @export
 

@@ -10,11 +10,9 @@
 #'        \code{1}: right).
 #' @param \dots passed to \code{f}.
 #'
-#' @note
-#' Simple finite-difference approximation: \eqn{\Delta f / \Delta x}.
+#' @return Vector of numerical derivatives.
 #'
-#' @return
-#' Vector of numerical derivatives.
+#' @note Simple finite-difference approximation: \eqn{\Delta f / \Delta x}.
 #'
 #' @export
 

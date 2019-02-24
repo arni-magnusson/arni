@@ -6,13 +6,12 @@
 #' @param Smax stock size that gives \code{Rmax}.
 #' @param S is spawning biomass.
 #'
+#' @return Recruitment as a number or vector.
+#'
 #' @note
 #' Formulation from Bjornsson and Magnusson (2009, Eq. 2.5, p. 6).
 #'
 #' Scale the y axis with \code{Rmax}.
-#'
-#' @return
-#' Recruitment as a number or vector.
 #'
 #' @export
 

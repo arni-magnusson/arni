@@ -4,12 +4,11 @@
 #'
 #' @param \dots passed to \code{eip}.
 #'
+#' @return Invisible copy of the updated function.
+#'
 #' @note
 #' To make fast edits without invoking Emacs, when working on a remote Linux
 #' machine.
-#'
-#' @return
-#' Invisible copy of the updated function.
 #'
 #' @export
 

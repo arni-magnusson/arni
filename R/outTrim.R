@@ -8,8 +8,7 @@
 #' @param na.rm whether \code{NA} values should be removed from vector before
 #'        trimming.
 #'
-#' @return
-#' Sorted vector, same size or shorter than \code{x}.
+#' @return Sorted vector, same size or shorter than \code{x}.
 #'
 #' @importFrom stats median
 #'

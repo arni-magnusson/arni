@@ -4,11 +4,9 @@
 #'
 #' @param \dots a function or function name.
 #'
-#' @note
-#' Shorthand notation for a common task.
+#' @return Shows function.
 #'
-#' @return
-#' Shows function.
+#' @note Shorthand notation for a common task.
 #'
 #' @importFrom utils getAnywhere
 #'

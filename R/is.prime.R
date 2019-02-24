@@ -5,8 +5,7 @@
 #' @param n the number to check.
 #' @param verbose whether to report the smallest divisor.
 #'
-#' @return
-#' Logical specifying whether number is a prime number.
+#' @return Logical specifying whether number is a prime number.
 #'
 #' @seealso
 #' \code{primes} in the \pkg{sfsmisc} package.

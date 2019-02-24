@@ -11,12 +11,11 @@
 #' @param cex.points point size.
 #' @param \dots passed to \code{hist}.
 #'
+#' @return Test result as \code{htest} object.
+#'
 #' @note
 #' Shapiro-Wilk test is used, as it seems to be preferred over the traditional
 #' G-test and Kolmogorov-Smirnov test.
-#'
-#' @return
-#' Test result as \code{htest} object.
 #'
 #' @importFrom graphics hist
 #' @importFrom stats shapiro.test

@@ -9,8 +9,7 @@
 #' @param ylab passed to \code{plot}.
 #' @param \dots passed to \code{plot}.
 #'
-#' @return
-#' \code{NULL}, but a plot is drawn.
+#' @return \code{NULL}, but a plot is drawn.
 #'
 #' @importFrom stats terms
 #'

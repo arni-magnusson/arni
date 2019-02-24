@@ -12,8 +12,7 @@
 #' @param ylim passed to \code{plot}.
 #' @param las passed to \code{plot} and \code{axis}.
 #'
-#' @return
-#' Vector containing subplot baselines on the x axis.
+#' @return Vector containing subplot baselines on the x axis.
 #'
 #' @author Alistair Dunn, with minor changes by Arni Magnusson.
 #'

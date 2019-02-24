@@ -4,8 +4,7 @@
 #'
 #' @param x a hexadecimal string, like \code{"FF"}.
 #'
-#' @return
-#' Decimal number.
+#' @return Decimal number.
 #'
 #' @export
 

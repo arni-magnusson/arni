@@ -4,9 +4,6 @@
 #'
 #' @param \dots passed to \code{ls}.
 #'
-#' @note
-#' Shorthand for \code{ll(all=TRUE)}.
-#'
 #' @return
 #' Data frame with named rows and the following columns:
 #' \preformatted{
@@ -14,6 +11,8 @@
 #'   KB     object size (name of this column is same as unit used)
 #'   Dim    object dimensions
 #' }
+#'
+#' @note Shorthand for \code{ll(all=TRUE)}.
 #'
 #' @importFrom gdata ll
 #'

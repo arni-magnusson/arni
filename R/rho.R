@@ -4,8 +4,7 @@
 #'
 #' @param x a vector of values.
 #'
-#' @return
-#' Autocorrelation as a number.
+#' @return Autocorrelation as a number.
 #'
 #' @note
 #' Gives same value as \code{acf(lag=1)}.

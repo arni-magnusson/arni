@@ -4,8 +4,7 @@
 #'
 #' @param x a table.
 #'
-#' @return
-#' Matrix with same data as \code{x}.
+#' @return Matrix with same data as \code{x}.
 #'
 #' @export
 

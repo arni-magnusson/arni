@@ -5,11 +5,9 @@
 #' @param lib.loc library to update.
 #' @param \dots passed to \code{update.packages}.
 #'
-#' @note
-#' Shorthand for \code{update.packages(.libPaths()[1])}.
+#' @return \code{NULL}, but packages are updated.
 #'
-#' @return
-#' \code{NULL}, but packages are updated.
+#' @note Shorthand for \code{update.packages(.libPaths()[1])}.
 #'
 #' @importFrom utils update.packages
 #'

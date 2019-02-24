@@ -22,7 +22,7 @@ Bind book from many PDF files.
 }
 \note{
 The PDF files should be named something like \file{0.pdf 1.pdf 27.pdf 42.pdf
-  ... 397.pdf 413a.pdf 413b.pdf}.
+... 397.pdf 413a.pdf 413b.pdf}.
 
 Before this function is called, unnecessary pages can be peeled out of
 \file{0.pdf}, and the last file often needs splitting, e.g. \file{413.pdf}

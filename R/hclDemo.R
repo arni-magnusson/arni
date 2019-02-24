@@ -7,8 +7,7 @@
 #' @param col an optional set of colors, to show some other palette.
 #' @param \dots passed to \code{hsvDemo}.
 #'
-#' @return
-#' \code{NULL}, but a plot is drawn.
+#' @return \code{NULL}, but a plot is drawn.
 #'
 #' @seealso
 #' \code{\link{hsvDemo}}, \code{\link{rgbDemo}}.

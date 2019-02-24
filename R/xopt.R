@@ -5,21 +5,21 @@
 #' @param model a fitted lm or glm of the form \code{y~x+I(x^2)}.
 #' @param se whether to report the standard error.
 #'
+#' @return
+#' List containing \code{est} (estimated optimal x) and \code{se} (standard
+#' error), or if \code{se = FALSE} a simple number.
+#'
 #' @note
 #' The standard error is evaluated using delta method approximation.
 #'
 #' The optimal x is the peak or bottom of the quadratic curve. See p. 54 in
-#'   Magnusson (2002).
+#' Magnusson (2002).
 #'
 #' @references
 #' Magnusson, A. 2002. \emph{Survival rates of coho (Oncorhynchus kisutch) and
 #' chinook salmon (O. tshawytscha) released from hatcheries on the U.S. and
 #' Canadian Pacific coast 1972-1998, with respect to climate and habitat
 #' effects.} M.S. thesis, University of Washington.
-#'
-#' @return
-#' List containing \code{est} (estimated optimal x) and \code{se} (standard
-#'   error), or if \code{se = FALSE} a simple number.
 #'
 #' @importFrom stats coef vcov
 #'

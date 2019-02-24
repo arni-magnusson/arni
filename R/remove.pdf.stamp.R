@@ -5,11 +5,9 @@
 #'
 #' @param file is a PDF document.
 #'
-#' @note
-#' Similar to Emacs Lisp function \verb{remove-pdf-stamp}.
+#' @return Overwrites original PDF file, after removing stamps.
 #'
-#' @return
-#' Overwrites original PDF file, after removing stamps.
+#' @note Similar to Emacs Lisp function \verb{remove-pdf-stamp}.
 #'
 #' @export
 

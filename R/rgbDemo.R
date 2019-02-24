@@ -6,8 +6,7 @@
 #' @param cex the size of plot symbols.
 #' @param bg the background color.
 #'
-#' @return
-#' \code{NULL}, but a plot is drawn.
+#' @return \code{NULL}, but a plot is drawn.
 #'
 #' @seealso
 #' \code{\link{hclDemo}}, \code{\link{hsvDemo}}.

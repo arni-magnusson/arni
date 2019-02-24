@@ -4,8 +4,7 @@
 #'
 #' @param x a numeric vector.
 #'
-#' @return
-#' Standard error as a number.
+#' @return Standard error as a number.
 #'
 #' @export
 

@@ -5,8 +5,7 @@
 #' @param before a string like \code{"7:58:32"}.
 #' @param after a string like \code{"8:55:09"}.
 #'
-#' @return
-#' Seconds as a number.
+#' @return Seconds as a number.
 #'
 #' @importFrom gmt deg2num
 #'

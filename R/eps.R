@@ -11,12 +11,11 @@
 #' @param paper the kind of paper to print on.
 #' @param \dots passed to \code{postscript}.
 #'
+#' @return \code{NULL}, but a graphics device is opened.
+#'
 #' @note
 #' EPS options \code{horizontal}, \code{onefile}, and \code{paper} are explained
 #' on the \code{postscript} help page.
-#'
-#' @return
-#' \code{NULL}, but a graphics device is opened.
 #'
 #' @importFrom grDevices postscript
 #'

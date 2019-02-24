@@ -6,8 +6,7 @@
 #' @param Phat predicted catch at age.
 #' @param n sample size, one number or vector.
 #'
-#' @return
-#' Negative log likelihood.
+#' @return Negative log likelihood.
 #'
 #' @export
 

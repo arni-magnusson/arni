@@ -13,10 +13,9 @@
 #'        (2) notes areas, (3) month areas, (4) year area.
 #' @param \dots passed to \code{text}.
 #'
-#' @importFrom graphics symbols segments text
+#' @return Vector of radians (\code{cos} and \code{sin} give day coordinates).
 #'
-#' @return
-#' Vector of radians (\code{cos} and \code{sin} give day coordinates).
+#' @importFrom graphics symbols segments text
 #'
 #' @export
 

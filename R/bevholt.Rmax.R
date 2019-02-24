@@ -6,8 +6,7 @@
 #' @param S50 stock size that gives 1/2 \code{Rmax}.
 #' @param S spawning biomass.
 #'
-#' @return
-#' Recruitment as a number or vector.
+#' @return Recruitment as a number or vector.
 #'
 #' @note
 #' Formulation from Haddon (2001, Eq. 9.2, p. 252).

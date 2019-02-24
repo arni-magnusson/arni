@@ -12,11 +12,9 @@
 #' @param col is either \code{"bw"}, \code{"col"}, or a vector/matrix of colors.
 #' @param \dots passed to \code{plotcorr}.
 #'
-#' @note
-#' Thin wrapper to pass colors to \code{plotcorr}.
+#' @return Invisible correlation matrix, reordered if \code{order.fun} was used.
 #'
-#' @return
-#' Invisible correlation matrix, reordered if \code{order.fun} was used.
+#' @note Thin wrapper to pass colors to \code{plotcorr}.
 #'
 #' @importFrom ellipse plotcorr
 #' @importFrom grDevices colorRamp gray rgb

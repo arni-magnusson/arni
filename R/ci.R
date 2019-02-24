@@ -6,11 +6,9 @@
 #' @param x a vector of iterations.
 #' @param level the significance level.
 #'
-#' @note
-#' See \code{BCboot} for bootstrap bias correction.
+#' @return Confidence bounds, a named vector of two elements.
 #'
-#' @return
-#' Confidence bounds, a named vector of two elements.
+#' @note See \code{BCboot} for bootstrap bias correction.
 #'
 #' @importFrom stats quantile
 #'

@@ -2,11 +2,9 @@
 #'
 #' Close all graphics devices.
 #'
-#' @return
-#' Closes all graphics devices.
+#' @return Closes all graphics devices.
 #'
-#' @note
-#' Shorthand notation for a common task.
+#' @note Shorthand notation for a common task.
 #'
 #' @importFrom grDevices graphics.off
 #'

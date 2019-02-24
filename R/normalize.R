@@ -6,6 +6,8 @@
 #' @param method either \code{"uniform"} (range 0-1), \code{"student"} (mean 0,
 #'        sd 1), or \code{"relative"} (mean 1, original cv).
 #'
+#' @return Numeric vector.
+#'
 #' @note
 #' For example, \code{c(10,20,30)} becomes:
 #' \preformatted{
@@ -16,9 +18,6 @@
 #'
 #' @seealso
 #' \code{\link{scale}}, equivalent to \code{method = "student"}.
-#'
-#' @return
-#' Numeric vector.
 #'
 #' @export
 

@@ -5,12 +5,11 @@
 #' @param x a percent-encoded URL string, like
 #'        \code{"http\%3A\%2F\%2Fwww.hafro.is\%2F\%7Earnima"}.
 #'
+#' @return Plain text, like \code{"http://www.hafro.is/~arnima"}.
+#'
 #' @note
 #' Percent-encoding is defined in RFC 3986
 #' (\url{https://tools.ietf.org/html/rfc3986#section-2.1}).
-#'
-#' @return
-#' Plain text, like \code{"http://www.hafro.is/~arnima"}.
 #'
 #' @export
 

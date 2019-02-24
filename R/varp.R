@@ -5,11 +5,9 @@
 #' @param x a numeric vector or the like.
 #' @param na.rm whether \code{NA} values should be stripped.
 #'
-#' @note
-#' Useful to evaluate MLE of \eqn{\sigma^2}.
+#' @return Variance, as a single number.
 #'
-#' @return
-#' Variance, as a single number.
+#' @note Useful to evaluate MLE of \eqn{\sigma^2}.
 #'
 #' @export
 
