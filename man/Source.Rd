@@ -26,7 +26,7 @@ Source(directory, pattern = "\\\\.R$", all.files = FALSE,
 \item{\dots}{passed to \code{sys.source} when sourcing files.}
 }
 \value{
-Names of sourced files, invisibly
+Names of sourced files.
 }
 \description{
 Source files from a directory.

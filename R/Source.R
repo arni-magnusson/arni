@@ -11,7 +11,7 @@
 #' @param quiet whether to suppress showing names of sourced files.
 #' @param \dots passed to \code{sys.source} when sourcing files.
 #'
-#' @return Names of sourced files, invisibly
+#' @return Names of sourced files.
 #'
 #' @export
 
@@ -22,14 +22,12 @@ Source <- function(directory, pattern="\\.R$", all.files=FALSE, recursive=FALSE,
   files <- dir(directory, full.names=TRUE, pattern=pattern, all.files=all.files,
                recursive=recursive)
 
-  if(quiet)
-    sapply(files, sys.source, envir=envir, keep.source=keep.source, ...)
-  else
-    sapply(files, function(f)
-    {
-      cat("  ", f, "\n",sep="")
-      sys.source(f, envir=envir, keep.source=keep.source, ...)
-    })
+  sapply(files, function(f)
+  {
+    if(!quiet)
+      cat("  ", f, "\n", sep="")
+    sys.source(f, envir=envir, keep.source=keep.source, ...)
+  })
 
   invisible(files)
 }
