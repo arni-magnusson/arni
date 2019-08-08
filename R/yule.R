@@ -5,7 +5,7 @@
 #' @param x a vector of labels, e.g. people names or words in a book.
 #'
 #' @return
-#' \eqn{K} as a single value
+#' \eqn{K} as a single value.
 #'
 #' @note
 #' Large value of \eqn{K} indicates lower diversity.
@@ -14,12 +14,12 @@
 #' to be identical.
 #'
 #' @references
-#' Yule, G.U. 1944. \emph{The statistical study of literary vocabulary.}
-#' Cambridge: Cambridge University Press.
+#' Yule, G. U. (1944) \emph{The statistical study of literary vocabulary.}
+#' Cambridge University Press, Cambridge.
 #'
-#' McElduff, F., P. Mateos, A. Wade, and M.C. Borja. 2008. What's in a name? The
-#' frequency and geographic distributions of UK surnames. \emph{Significance}
-#' \bold{5}:189-192.
+#' McElduff, F., Mateos, P., Wade, A. and Borja, M. C. (2008) What's in a name?
+#' The frequency and geographic distributions of UK surnames.
+#' \emph{Significance}, \bold{5}, 189--192.
 #'
 #' @seealso
 #' \code{\link{shannon}}.
