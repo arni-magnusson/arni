@@ -22,10 +22,10 @@ Calculate sum of squared residuals from the mean (not RSS).
 
 Similar speed in a benchmark with 1e5 calls of length 100:
 \enumerate{
-  \item \code{sumx<-sum(x); output<-sum(x*x)-sumx*sumx/length(x)}
-  \item \code{output<-.Internal(cov(x,NULL,1,FALSE))*(length(x)-1)},
-        which is the same as \code{var(x)*(length(x)-1)}
-  \item \code{x_xbar<-x-.Internal(mean(x)); output<-sum(x_xbar*x_xbar)}
+\item \code{sumx<-sum(x); output<-sum(x*x)-sumx*sumx/length(x)}
+\item \code{output<-.Internal(cov(x,NULL,1,FALSE))*(length(x)-1)}, which is
+      the same as \code{var(x)*(length(x)-1)}
+\item \code{x_xbar<-x-.Internal(mean(x)); output<-sum(x_xbar*x_xbar)}
 }
 
 These are all 3 x faster than \code{output<-sum((x-mean(x))^2)}.

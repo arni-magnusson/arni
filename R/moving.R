@@ -9,10 +9,10 @@
 #' @details
 #' Alternative \code{end} treatments are:
 #' \tabular{ll}{
-#'   \code{NA} \tab use \code{NA} values\cr
-#'   \code{FALSE} truncate, so output is shorter than \code{x}\cr
-#'   \code{TRUE} evaluate moving average on ends, even if the neighbors are all
-#'   on one side
+#'   \code{NA}    \tab use \code{NA} values\cr
+#'   \code{FALSE} \tab truncate, so output is shorter than \code{x}\cr
+#'   \code{TRUE}  \tab evaluate moving average on ends, even if the neighbors
+#'                     are all on one side
 #' }
 #'
 #' @return Vector of same length as \code{x}, containing weighted averages.

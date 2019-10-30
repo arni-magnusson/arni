@@ -21,17 +21,17 @@ Run diagnostic tests on an MCMC trace.
 Three \code{return.type} formats are supported:
 \tabular{ll}{
   \code{"logical"} \tab a single logical value, indicating whether all tests
-  were passed\cr
-  \code{"list"} \tab a detailed list of all test results\cr
-  \code{"string"} \tab a string indicating which tests failed
+                        were passed\cr
+  \code{"list"}    \tab a detailed list of all test results\cr
+  \code{"string"}  \tab a string indicating which tests failed
 }
 }
 \note{
 The test criteria are:
 \enumerate{
-  \item Autocorrelation <= 0.1
-  \item Geweke Z <= 1.96
-  \item Heidelberger-Welch p >= 0.05
+\item Autocorrelation <= 0.1
+\item Geweke Z <= 1.96
+\item Heidelberger-Welch p >= 0.05
 }
 
 Users can apply other criteria by requesting \code{return.type = "list"}.
