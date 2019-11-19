@@ -4,8 +4,7 @@
 \alias{hsvDemo}
 \title{HSV Colors}
 \usage{
-hsvDemo(n = 400, col = hsv(seq(0, 1 - 1/n, 1/n)), labels = "n",
-  bg = "black")
+hsvDemo(n = 400, col = hsv(seq(0, 1 - 1/n, 1/n)), labels = "n", bg = "black")
 }
 \arguments{
 \item{n}{the number of hue values.}

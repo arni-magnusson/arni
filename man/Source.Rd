@@ -4,9 +4,16 @@
 \alias{Source}
 \title{Source Files}
 \usage{
-Source(directory, pattern = "\\\\.R$", all.files = FALSE,
-  recursive = FALSE, envir = parent.frame(),
-  keep.source = getOption("keep.source"), quiet = FALSE, ...)
+Source(
+  directory,
+  pattern = "\\\\.R$",
+  all.files = FALSE,
+  recursive = FALSE,
+  envir = parent.frame(),
+  keep.source = getOption("keep.source"),
+  quiet = FALSE,
+  ...
+)
 }
 \arguments{
 \item{directory}{a directory containing R source files.}

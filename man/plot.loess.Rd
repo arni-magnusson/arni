@@ -4,8 +4,7 @@
 \alias{plot.loess}
 \title{Plot Loess}
 \usage{
-\method{plot}{loess}(x, lwd = 2, line.col = "black", xlab = NULL,
-  ylab = NULL, ...)
+\method{plot}{loess}(x, lwd = 2, line.col = "black", xlab = NULL, ylab = NULL, ...)
 }
 \arguments{
 \item{x}{a fitted loess model.}

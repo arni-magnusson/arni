@@ -4,8 +4,17 @@
 \alias{dplot}
 \title{Density Plot}
 \usage{
-dplot(..., name = TRUE, quantiles = 0.5, plot.mean = FALSE,
-  main = "", xlab = "", ylab = "", ylim, las = 1)
+dplot(
+  ...,
+  name = TRUE,
+  quantiles = 0.5,
+  plot.mean = FALSE,
+  main = "",
+  xlab = "",
+  ylab = "",
+  ylim,
+  las = 1
+)
 }
 \arguments{
 \item{\dots}{a list of values, typically from split(x,factor).}

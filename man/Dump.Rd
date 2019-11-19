@@ -4,9 +4,13 @@
 \alias{Dump}
 \title{Dump Objects}
 \usage{
-Dump(list = if (length(ls(1)) > 0) ls(1)[sapply(ls(1), function(x)
-  is.function(get(x, 1)))] else NULL, file = paste0(dirname(tempdir()),
-  "/temp.R"), envir = .GlobalEnv, pager = getOption("pager"))
+Dump(
+  list = if (length(ls(1)) > 0) ls(1)[sapply(ls(1), function(x) is.function(get(x, 1)))]
+    else NULL,
+  file = paste0(dirname(tempdir()), "/temp.R"),
+  envir = .GlobalEnv,
+  pager = getOption("pager")
+)
 }
 \arguments{
 \item{list}{a vector of object names.}

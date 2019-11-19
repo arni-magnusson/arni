@@ -4,8 +4,11 @@
 \alias{libStatus}
 \title{Library Status}
 \usage{
-libStatus(lib.loc = .libPaths(),
-  repositories = contrib.url(getOption("repos")), full = FALSE)
+libStatus(
+  lib.loc = .libPaths(),
+  repositories = contrib.url(getOption("repos")),
+  full = FALSE
+)
 }
 \arguments{
 \item{lib.loc}{a string vector indicating which libraries to analyze.}

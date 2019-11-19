@@ -13,9 +13,14 @@ compare(A, B, ...)
 
 \method{compare}{default}(A, B, ...)
 
-\method{compare}{function}(A, B, useSource = TRUE, external = FALSE,
+\method{compare}{`function`}(
+  A,
+  B,
+  useSource = TRUE,
+  external = FALSE,
   viewer = if (.Platform$OS.type == "windows") "winmerge" else "kompare",
-  ...)
+  ...
+)
 }
 \arguments{
 \item{A}{object to compare.}

@@ -4,8 +4,15 @@
 \alias{calendar}
 \title{Calendar}
 \usage{
-calendar(filename = NULL, year = 2009, lwd = 0.1, radius = c(1.03,
-  0.95, 0.8, 0.65), cex = c(0.3, 0.8, 1.6), col = "white", ...)
+calendar(
+  filename = NULL,
+  year = 2009,
+  lwd = 0.1,
+  radius = c(1.03, 0.95, 0.8, 0.65),
+  cex = c(0.3, 0.8, 1.6),
+  col = "white",
+  ...
+)
 }
 \arguments{
 \item{filename}{EPS output file, or \code{NULL} to draw on screen.}

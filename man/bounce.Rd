@@ -4,8 +4,16 @@
 \alias{bounce}
 \title{Bouncing Ball}
 \usage{
-bounce(n = 5000, init = c(3, 1), vel = c(0.03, 0.04), xlim = c(0,
-  10), ylim = c(0, 10), pch = 16, col = "blue", cex = 1.5)
+bounce(
+  n = 5000,
+  init = c(3, 1),
+  vel = c(0.03, 0.04),
+  xlim = c(0, 10),
+  ylim = c(0, 10),
+  pch = 16,
+  col = "blue",
+  cex = 1.5
+)
 }
 \arguments{
 \item{n}{number of time steps to simulate.}

@@ -4,8 +4,14 @@
 \alias{vioplot2}
 \title{Violin Plot}
 \usage{
-vioplot2(x, ..., orientation = "vertical", bw = "nrd0", names = NULL,
-  pars = NULL)
+vioplot2(
+  x,
+  ...,
+  orientation = "vertical",
+  bw = "nrd0",
+  names = NULL,
+  pars = NULL
+)
 }
 \arguments{
 \item{x}{a vector or data frame.}
