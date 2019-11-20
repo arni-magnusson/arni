@@ -1,11 +1,12 @@
 Package: arni
-Version: 19.8-8
-Date: 2019-08-08
+Version: 19.11-19
+Date: 2019-11-19
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"),
   email="arni.magnusson@ices.dk"))
 Imports: graphics, lattice, methods, stats, tools, utils,
   coda, ellipse, gdata, gmt, maps
+Suggests: caTools
 Description: A collection of handy tools.
 License: GPL (>= 2)
 Encoding: UTF-8

@@ -13,7 +13,7 @@
 #' @seealso
 #' \code{\link{hclDemo}}, \code{\link{rgbDemo}}.
 #'
-#' @importFrom graphics pie
+#' @importFrom graphics par pie
 #' @importFrom grDevices hsv
 #'
 #' @export
