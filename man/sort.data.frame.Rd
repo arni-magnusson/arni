@@ -4,18 +4,18 @@
 \alias{sort.data.frame}
 \title{Sort Data Frame}
 \usage{
-\method{sort}{data.frame}(x, decreasing = NULL, by = seq_along(x), na.last = TRUE, ...)
+\method{sort}{data.frame}(x, decreasing = FALSE, by = seq_along(x), na.last = TRUE, ...)
 }
 \arguments{
 \item{x}{a data frame.}
 
-\item{decreasing}{ignored (S3 template).}
+\item{decreasing}{whether to reverse the sorting order.}
 
 \item{by}{a vector containing column numbers or column names to sort by,
 negative means descending.}
 
-\item{na.last}{whether \code{NA} values are treated as being last in
-alphabetical order.}
+\item{na.last}{whether \code{NA} values are treated as being last in the
+sorting order.}
 
 \item{\dots}{ignored (S3 template).}
 }

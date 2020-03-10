@@ -3,11 +3,11 @@
 #' Sort data frame by one or more columns.
 #'
 #' @param x a data frame.
-#' @param decreasing ignored (S3 template).
+#' @param decreasing whether to reverse the sorting order.
 #' @param by a vector containing column numbers or column names to sort by,
 #'        negative means descending.
-#' @param na.last whether \code{NA} values are treated as being last in
-#'        alphabetical order.
+#' @param na.last whether \code{NA} values are treated as being last in the
+#'        sorting order.
 #' @param \dots ignored (S3 template).
 #'
 #' @return Data frame containing sorted data.
@@ -21,7 +21,7 @@
 #' @export
 #' @export sort.data.frame
 
-sort.data.frame <- function(x, decreasing=NULL, by=seq_along(x),
+sort.data.frame <- function(x, decreasing=FALSE, by=seq_along(x),
                             na.last=TRUE, ...)
 {
   if(is.numeric(by))
@@ -33,6 +33,9 @@ sort.data.frame <- function(x, decreasing=NULL, by=seq_along(x),
   {
     ascending <- rep(TRUE, length.out=length(by))
   }
+  decreasing <- rep(decreasing, length.out=length(by))
+  ascending <- ifelse(decreasing, !ascending, ascending)
+
   keys <- seq_len(nrow(x))
   rotate <- rev(keys)  # static
 
