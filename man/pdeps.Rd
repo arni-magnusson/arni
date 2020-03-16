@@ -4,16 +4,8 @@
 \alias{pdeps}
 \title{Package Dependencies}
 \usage{
-pdeps(
-  packages,
-  recursive = TRUE,
-  reverse = FALSE,
-  base = FALSE,
-  installed = TRUE,
-  available = TRUE,
-  sort = FALSE,
-  ...
-)
+pdeps(packages, recursive = TRUE, reverse = FALSE, base = FALSE,
+  installed = TRUE, available = TRUE, sort = FALSE, ...)
 }
 \arguments{
 \item{packages}{package names.}

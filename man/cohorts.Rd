@@ -4,18 +4,8 @@
 \alias{cohorts}
 \title{Transform Table to Cohort Format}
 \usage{
-cohorts(
-  x,
-  xtab = TRUE,
-  plot = TRUE,
-  log = "",
-  base = exp(1),
-  type = "l",
-  lty = 1,
-  xlab = "Age",
-  ylab = "Value",
-  ...
-)
+cohorts(x, xtab = TRUE, plot = TRUE, log = "", base = exp(1),
+  type = "l", lty = 1, xlab = "Age", ylab = "Value", ...)
 }
 \arguments{
 \item{x}{a \code{Year | Age | Value} table (three column data frame or

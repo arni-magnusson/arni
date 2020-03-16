@@ -4,15 +4,8 @@
 \alias{norm.test}
 \title{Normal Distribution Test}
 \usage{
-norm.test(
-  x,
-  plot = TRUE,
-  dots = 50,
-  verbose = FALSE,
-  pch = 16,
-  cex.points = 1,
-  ...
-)
+norm.test(x, plot = TRUE, dots = 50, verbose = FALSE, pch = 16,
+  cex.points = 1, ...)
 }
 \arguments{
 \item{x}{a numeric vector.}

@@ -1,6 +1,6 @@
 Package: arni
-Version: 20.3-10
-Date: 2020-03-10
+Version: 20.3-16
+Date: 2020-03-16
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"),
   email="arni.magnusson@ices.dk"))
@@ -10,4 +10,5 @@ Suggests: caTools
 Description: A collection of handy tools.
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
+Roxygen: list(old_usage=TRUE)

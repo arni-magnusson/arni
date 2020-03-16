@@ -4,12 +4,8 @@
 \alias{outGrubbs}
 \title{Outlier Test}
 \usage{
-outGrubbs(
-  x,
-  output = c("stripped", "outliers", "which"),
-  alpha = 0.05,
-  log = FALSE
-)
+outGrubbs(x, output = c("stripped", "outliers", "which"), alpha = 0.05,
+  log = FALSE)
 }
 \arguments{
 \item{x}{a numeric vector.}

@@ -4,16 +4,8 @@
 \alias{eps}
 \title{EPS Device}
 \usage{
-eps(
-  file = "plot.eps",
-  width = 6,
-  height = 4,
-  pointsize = 10,
-  horizontal = FALSE,
-  onefile = FALSE,
-  paper = "special",
-  ...
-)
+eps(file = "plot.eps", width = 6, height = 4, pointsize = 10,
+  horizontal = FALSE, onefile = FALSE, paper = "special", ...)
 }
 \arguments{
 \item{file}{output filename.}
