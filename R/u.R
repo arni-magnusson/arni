@@ -1,19 +1,22 @@
 #' Update Packages
 #'
-#' Update packages in user library.
+#' Update packages.
 #'
-#' @param lib.loc library to update.
 #' @param \dots passed to \code{update.packages}.
 #'
-#' @return \code{NULL}, but packages are updated.
-#'
-#' @note Shorthand for \code{update.packages(.libPaths()[1])}.
+#' @note Shorthand notation for \code{update.packages()}.
 #'
 #' @importFrom utils update.packages
 #'
+#' @examples
+#' \dontrun{
+#' u()
+#' u(libPaths()[1])  # skip core packages
+#' }
+#'
 #' @export
 
-u <- function(lib.loc=.libPaths()[1], ...)
+u <- function(...)
 {
-  update.packages(lib.loc=lib.loc, ...)
+  update.packages(...)
 }
