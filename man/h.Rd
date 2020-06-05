@@ -13,14 +13,16 @@ log).}
 \item{reverse}{whether to show lines in reverse order (not useful when there
 are continuation lines).}
 
-\item{\dots}{passed to \code{history}.}
-}
-\value{
-Shows command history in external editor.
+\item{\dots}{passed to \code{history} and \code{file.show}.}
 }
 \description{
 Show full command history.
 }
 \note{
-Shorthand notation for a common task.
+Shorthand notation for \code{history()} with improved support for Emacs ESS.
+
+The base \code{history} function returns an error inside an Emacs session. As
+a workaround, this function checks if it is run from inside Emacs and if that
+is the case, it calls \code{file.show} to show the \file{.Rhistory} file
+(ignoring both \code{max.show} and \code{reverse}).
 }
