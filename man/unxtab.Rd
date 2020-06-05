@@ -4,24 +4,25 @@
 \alias{unxtab}
 \title{Uncrosstab}
 \usage{
-unxtab(x, labels = c(rows = "Year", cols = "Age", vals = "Value"))
+unxtab(x, labels = c("Year", "Age", "Value"))
 }
 \arguments{
-\item{x}{a crosstab table (data frame, matrix, or table), with important row
+\item{x}{a crosstab table (data frame, matrix, or table) with descriptive row
 names and column names.}
 
 \item{labels}{a vector of three strings, used as column names for the
 resulting data frame.}
 }
 \value{
-Data frame (3 cols) that can be crosstabbed to look like \code{x}.
+Data frame in long format (3 columns) that can be crosstabbed to look like
+\code{x}.
 }
 \description{
-Coerce crosstab table into three column data frame.
+Convert a table from crosstab format to long format.
 }
 \note{
-Use dimnames like \code{"1990"} instead of \code{"Year1990"} for numeric
-entries in resulting data frame.
+Use dimnames like \code{"1990"} instead of \code{"Year1990"} to end up with
+numeric entries in resulting data frame.
 
 Another approach is \code{as.data.frame(as.table(as.matrix(x)))}.
 }
