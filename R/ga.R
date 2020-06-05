@@ -6,7 +6,7 @@
 #'
 #' @return Shows function.
 #'
-#' @note Shorthand notation for a common task.
+#' @note Shorthand notation for \code{getAnywhere()}.
 #'
 #' @importFrom utils getAnywhere
 #'

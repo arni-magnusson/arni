@@ -16,5 +16,5 @@ Shows function.
 Show non-visible function.
 }
 \note{
-Shorthand notation for a common task.
+Shorthand notation for \code{getAnywhere()}.
 }
