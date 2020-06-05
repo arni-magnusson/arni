@@ -4,7 +4,8 @@
 \alias{plot.loess}
 \title{Plot Loess}
 \usage{
-\method{plot}{loess}(x, lwd = 2, line.col = "black", xlab = NULL, ylab = NULL, ...)
+\method{plot}{loess}(x, lwd = 2, line.col = "black", xlim = NULL,
+  ylim = NULL, xlab = NULL, ylab = NULL, ...)
 }
 \arguments{
 \item{x}{a fitted loess model.}
@@ -12,6 +13,10 @@
 \item{lwd}{the line width.}
 
 \item{line.col}{the line colour.}
+
+\item{xlim}{passed to \code{plot}.}
+
+\item{ylim}{passed to \code{plot}.}
 
 \item{xlab}{passed to \code{plot}.}
 
