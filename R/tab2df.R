@@ -6,6 +6,8 @@
 #'
 #' @return Data frame with same data as \code{x}.
 #'
+#' @importFrom utils type.convert
+#'
 #' @export
 
 tab2df <- function(x)
