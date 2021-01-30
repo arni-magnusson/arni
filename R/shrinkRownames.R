@@ -18,7 +18,7 @@ shrinkRownames <- function(x, force=FALSE)
 {
   if(force)
   {
-    row.names(x) <- seq_len(nrow(x))            # just overwrite with 1, 2, ...
+    row.names(x) <- NULL  # just overwrite with 1, 2, ...
   }
   else
   {
