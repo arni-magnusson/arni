@@ -7,11 +7,11 @@
 #' @note Shorthand notation for \code{print.simple.list()}.
 #'
 #' @examples
-#' pls(options())
+#' psl(options())
 #'
 #' @export
 
-pls <- function(...)
+psl <- function(...)
 {
   print.simple.list(...)
 }
