@@ -12,7 +12,7 @@ lmxy2(X, y)
 \item{y}{a vector (or single-column matrix) containing response values.}
 }
 \value{
-Single-column matrix containing the coefficients.
+Vector containing the coefficients.
 }
 \description{
 Fit multiple LM fast, only returning the coefficients.

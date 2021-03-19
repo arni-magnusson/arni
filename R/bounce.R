@@ -7,6 +7,8 @@
 #' @param vel initial x and y velocity (vector of length 2).
 #' @param xlim x-axis limits (vector of length 2).
 #' @param ylim y-axis limits (vector of length 2).
+#' @param xaxs x-axis style.
+#' @param yaxs y-axis style.
 #' @param pch point symbol.
 #' @param col point color.
 #' @param cex point size.
@@ -18,7 +20,8 @@
 #' @export
 
 bounce <- function(n=5000, init=c(3,1), vel=c(0.03,0.04), xlim=c(0,10),
-                   ylim=c(0,10), pch=16, col="blue", cex=1.5)
+                   ylim=c(0,10), xaxs="i", yaxs="i", pch=16, col="blue",
+                   cex=1.5)
 {
   x <- init[1]
   y <- init[2]
@@ -33,7 +36,7 @@ bounce <- function(n=5000, init=c(3,1), vel=c(0.03,0.04), xlim=c(0,10),
       vy <- -vy
     x <- x + vx
     y <- y + vy
-    plot(x, y, xlim=xlim, ylim=ylim, ann=FALSE, xaxt="n", yaxt="n", pch=pch,
-         col=col, cex=cex)
+    plot(x, y, xlim=xlim, ylim=ylim, xaxs=xaxs, yaxs=yaxs, ann=FALSE, xaxt="n",
+         yaxt="n", pch=pch, col=col, cex=cex)
   }
 }
