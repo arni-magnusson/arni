@@ -12,5 +12,5 @@
 
 tab2df <- function(x)
 {
-  as.data.frame(unclass(x), row.names=type.convert(row.names(x)))
+  as.data.frame(unclass(x), row.names=type.convert(row.names(x), as.is=TRUE))
 }
