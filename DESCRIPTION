@@ -2,7 +2,7 @@ Package: arni
 Version: 21.12-24
 Date: 2021-12-24
 Title: Arni's Toolbox
-Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"), email="thisisarni@gmail.comk"))
+Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"), email="thisisarni@gmail.com"))
 Imports: graphics, lattice, methods, stats, tools, utils,
   coda, ellipse, gdata, gmt, maps
 Suggests: caTools
