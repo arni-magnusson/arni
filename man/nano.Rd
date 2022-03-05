@@ -7,7 +7,7 @@
 nano(...)
 }
 \arguments{
-\item{\dots}{is passed to \code{fix}.}
+\item{\dots}{passed to \code{fix}.}
 }
 \value{
 Invisible copy of the updated function.

@@ -9,7 +9,7 @@
 #'        standard format is used.
 #' @param external whether to compare using an external viewer.
 #' @param viewer an external program to use if \code{external=TRUE}.
-#' @param \dots is passed to \code{compare.*} methods.
+#' @param \dots passed to \code{compare.*} methods.
 #'
 #' @return
 #' List with 4 elements:

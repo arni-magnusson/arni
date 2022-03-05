@@ -15,10 +15,10 @@ correlations.}
 \item{type}{which part of the matrix should be plotted: \code{"full"},
 \code{"lower"}, or \code{"upper"}.}
 
-\item{order.fun}{is a function to reorder variables w.r.t. absolute
+\item{order.fun}{a function to reorder variables w.r.t. absolute
 correlations: e.g. \code{mean}, \code{median}, or \code{max}.}
 
-\item{col}{is either \code{"bw"}, \code{"col"}, or a vector/matrix of colors.}
+\item{col}{either \code{"bw"}, \code{"col"}, or a vector/matrix of colors.}
 
 \item{\dots}{passed to \code{plotcorr}.}
 }

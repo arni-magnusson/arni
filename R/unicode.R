@@ -5,7 +5,7 @@
 #'
 #' @param x a code point as decimal or hexadecimal number (or a character if
 #'        \code{reverse = TRUE}).
-#' @param reverse is whether to get a point point from a character.
+#' @param reverse whether to get a point point from a character.
 #'
 #' @return String vector, or integer vector if \code{reverse = TRUE}.
 #'

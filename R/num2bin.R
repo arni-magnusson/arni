@@ -2,7 +2,7 @@
 #'
 #' Convert number to binary format.
 #'
-#' @param x is number.
+#' @param x a number.
 #' @param width minimum width for output string.
 #'
 #' @return Binary string.

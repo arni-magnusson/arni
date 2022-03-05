@@ -24,7 +24,7 @@ p.arrows(x1, y1, x2, y2, size = 1, width = (sqrt(5) - 1)/4/cin, fill = 2,
 
 \item{border}{arrowhead border color.}
 
-\item{\dots}{is passed to \code{segments}.}
+\item{\dots}{passed to \code{segments}.}
 }
 \value{
 \code{NULL}, but arrowhead is drawn.

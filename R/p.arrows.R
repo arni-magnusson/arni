@@ -10,7 +10,7 @@
 #' @param width arrowhead width.
 #' @param fill arrowhead fill color.
 #' @param border arrowhead border color.
-#' @param \dots is passed to \code{segments}.
+#' @param \dots passed to \code{segments}.
 #'
 #' @return \code{NULL}, but arrowhead is drawn.
 #'

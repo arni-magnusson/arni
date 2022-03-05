@@ -3,7 +3,7 @@
 #' Single quantile plot, or a scatterplot matrix with quantile plots diagonal
 #' panels.
 #'
-#' @param x is a vector, matrix, or data frame.
+#' @param x a vector, matrix, or data frame.
 #' @param xlab x axis label (only used if \code{x} is a vector).
 #' @param ylab y axis label (only used if \code{x} is a vector).
 #' @param \dots passed to plot and pairs.

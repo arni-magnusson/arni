@@ -4,7 +4,7 @@
 #'
 #' @param Rmax maximum recruitment.
 #' @param Smax stock size that gives \code{Rmax}.
-#' @param S is spawning biomass.
+#' @param S spawning biomass.
 #'
 #' @return Recruitment as a number or vector.
 #'

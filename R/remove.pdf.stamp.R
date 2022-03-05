@@ -3,7 +3,7 @@
 #' Replace PDF stamp like \samp{(Downloaded by [Arni Magnusson] ...)} with
 #' spaces.
 #'
-#' @param file is a PDF document.
+#' @param file a PDF document.
 #'
 #' @return Overwrites original PDF file, after removing stamps.
 #'

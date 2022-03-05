@@ -7,7 +7,7 @@
 num2bin(x, width = NULL)
 }
 \arguments{
-\item{x}{is number.}
+\item{x}{a number.}
 
 \item{width}{minimum width for output string.}
 }

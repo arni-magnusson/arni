@@ -11,7 +11,7 @@ ricker.Rmax(Rmax, Smax, S)
 
 \item{Smax}{stock size that gives \code{Rmax}.}
 
-\item{S}{is spawning biomass.}
+\item{S}{spawning biomass.}
 }
 \value{
 Recruitment as a number or vector.

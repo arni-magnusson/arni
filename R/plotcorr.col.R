@@ -7,9 +7,9 @@
 #'        correlations.
 #' @param type which part of the matrix should be plotted: \code{"full"},
 #'        \code{"lower"}, or \code{"upper"}.
-#' @param order.fun is a function to reorder variables w.r.t. absolute
+#' @param order.fun a function to reorder variables w.r.t. absolute
 #'        correlations: e.g. \code{mean}, \code{median}, or \code{max}.
-#' @param col is either \code{"bw"}, \code{"col"}, or a vector/matrix of colors.
+#' @param col either \code{"bw"}, \code{"col"}, or a vector/matrix of colors.
 #' @param \dots passed to \code{plotcorr}.
 #'
 #' @return Invisible correlation matrix, reordered if \code{order.fun} was used.

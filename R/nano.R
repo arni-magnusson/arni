@@ -2,7 +2,7 @@
 #'
 #' Edit function with the Nano editor.
 #'
-#' @param \dots is passed to \code{fix}.
+#' @param \dots passed to \code{fix}.
 #'
 #' @return Invisible copy of the updated function.
 #'

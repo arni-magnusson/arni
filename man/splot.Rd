@@ -7,7 +7,7 @@
 splot(x, xlab = NULL, ylab = NULL, ...)
 }
 \arguments{
-\item{x}{is a vector, matrix, or data frame.}
+\item{x}{a vector, matrix, or data frame.}
 
 \item{xlab}{x axis label (only used if \code{x} is a vector).}
 

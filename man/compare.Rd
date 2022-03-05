@@ -22,7 +22,7 @@ compare(A, B, ...)
 
 \item{B}{object to compare.}
 
-\item{\dots}{is passed to \code{compare.*} methods.}
+\item{\dots}{passed to \code{compare.*} methods.}
 
 \item{zoom}{whether to show only data frame columns whose values differ.}
 

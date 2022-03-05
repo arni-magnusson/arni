@@ -7,7 +7,7 @@
 remove.pdf.stamp(file)
 }
 \arguments{
-\item{file}{is a PDF document.}
+\item{file}{a PDF document.}
 }
 \value{
 Overwrites original PDF file, after removing stamps.

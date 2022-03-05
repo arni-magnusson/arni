@@ -10,7 +10,7 @@ unicode(x = 0:255, reverse = FALSE)
 \item{x}{a code point as decimal or hexadecimal number (or a character if
 \code{reverse = TRUE}).}
 
-\item{reverse}{is whether to get a point point from a character.}
+\item{reverse}{whether to get a point point from a character.}
 }
 \value{
 String vector, or integer vector if \code{reverse = TRUE}.
