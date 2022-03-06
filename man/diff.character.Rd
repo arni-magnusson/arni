@@ -5,7 +5,8 @@
 \alias{diff}
 \title{Compare Files}
 \usage{
-\method{diff}{character}(x, y, file = NULL, lines = FALSE, short = TRUE, simple = TRUE, ...)
+\method{diff}{character}(x, y, file = NULL, ignore = NULL, lines = FALSE,
+  short = TRUE, simple = TRUE, ...)
 }
 \arguments{
 \item{x}{a file or folder name.}
@@ -14,6 +15,8 @@
 
 \item{file}{if \code{x} and \code{y} are folders, then \code{file} can be
 used to select a specific file that exists in both folders.}
+
+\item{ignore}{patterns (regular expressions) to exclude from the output.}
 
 \item{lines}{if \code{x} and \code{y} are folders, then \code{lines = TRUE}
 compares the contents (lines) of files that exist in both folders,
@@ -83,19 +86,27 @@ file.remove("one.txt", "two.txt")
 
 # Another example with two files
 x <- system.file("DESCRIPTION", package="base")
-y <- system.file("DESCRIPTION", package="datasets")
+y <- system.file("DESCRIPTION", package="stats")
 diff(x, y)
 
-# Compare two folders
-x <- system.file(package="base")
-y <- system.file(package="datasets")
-diff(x, y)                       # these filenames are different
-diffs <- diff(x, y, lines=TRUE)  # compare files that exist in both folders
-names(diffs)                     # the content of these files is different
-str(diffs)                       # compact summary
-diffs                            # show all lines that are different
+# Filter out noise
+diff(x, y, ignore=c("Package:", "Title:", "Description:", "Built:"))
 
-# Compare file that exists in both folders
+# Compare two folders
+A <- system.file(package="base")
+B <- system.file(package="stats")
+diff(A, B)                         # these filenames are different
+diff(A, B, ignore="^C")            # exclude entries starting with C
+diffs <- diff(A, B, lines=TRUE)    # compare files that exist in both folders
+names(diffs)                       # the content of these files is different
+str(diffs)                         # summary of differences
+diffs                              # all lines that are different
+
+# Alternative format
+diff(A, B, ignore="^C")                             # short format
+diff(A, B, ignore="^C", short=FALSE, simple=FALSE)  # long format
+
+# Compare one file that exists in both folders
 diff(x, y, "DESCRIPTION")  # same as diffs$DESCRIPTION
 }
 
