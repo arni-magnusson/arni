@@ -15,7 +15,12 @@
 #' @param \dots passed to \code{readLines}.
 #'
 #' @details
-#' When \code{x} and \code{y} are files (and not folders), the \code{file} and
+#' When comparing folders, two kinds of differences can occur: (1) filenames
+#' existing in one folder and not the other, and (2) files containing different
+#' lines of text. The purpose of the \code{lines} argument is to select which of
+#' those two kinds of differences to show.
+#'
+#' If \code{x} and \code{y} are files (and not folders), the \code{file} and
 #' \code{lines} arguments are not applicable and will be ignored.
 #'
 #' @return List showing differences as strings.
@@ -33,10 +38,9 @@
 #'
 #' This function has very basic features compared to full GUI applications such
 #' as \emph{WinMerge} (Windows), \emph{Meld} (Linux, Windows), \emph{Kompare}
-#' (Linux), \emph{Ediff} (Emacs), or the \emph{Diff} shell command.
-#'
-#' The use of full GUI applications is recommended, but what this function
-#' offers in addition is:
+#' (Linux), \emph{Ediff} (Emacs), or the \command{diff} shell command. The use
+#' of full GUI applications is recommended, but what this function offers in
+#' addition is:
 #'
 #' \itemize{
 #' \item a quick diff tool that is handy during an interactive R session,
