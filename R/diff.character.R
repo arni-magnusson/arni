@@ -169,8 +169,8 @@ diff.dir <- function(x, y, short=TRUE, simple=TRUE)
 diff.file <- function(x, y, short=TRUE, simple=TRUE, ...)
 {
   ## 1  Read files
-  A <- readLines(x)
-  B <- readLines(y)
+  A <- readLines(x, ...)
+  B <- readLines(y, ...)
 
   ## 2  Compare
   diffA <- setdiff(A, B)
