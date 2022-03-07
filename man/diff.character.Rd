@@ -32,7 +32,7 @@ output, for compact display.}
 \item{\dots}{passed to \code{readLines}.}
 }
 \value{
-List showing differences as strings.
+List showing differences as strings, or similarities if \code{similar = TRUE}.
 }
 \description{
 Show differences between files or folders.

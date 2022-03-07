@@ -25,7 +25,8 @@
 #' If \code{x} and \code{y} are files (and not folders), the \code{file} and
 #' \code{lines} arguments are not applicable and will be ignored.
 #'
-#' @return List showing differences as strings.
+#' @return
+#' List showing differences as strings, or similarities if \code{similar = TRUE}.
 #'
 #' @note
 #' File and folder names are of class \code{character} so \code{diff("pathA",
