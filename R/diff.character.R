@@ -14,6 +14,7 @@
 #' @param similar whether to show similarities instead of differences.
 #' @param simple whether to replace \code{character(0)} with \code{NULL} in
 #'        output, for compact display.
+#' @param trimws whether to trim whitespace and exclude empty strings.
 #' @param \dots passed to \code{readLines}.
 #'
 #' @details
@@ -26,7 +27,8 @@
 #' \code{lines} arguments are not applicable and will be ignored.
 #'
 #' @return
-#' List showing differences as strings, or similarities if \code{similar = TRUE}.
+#' List showing differences as strings, or similarities if
+#' \code{similar = TRUE}.
 #'
 #' @note
 #' File and folder names are of class \code{character} so \code{diff("pathA",
@@ -67,9 +69,10 @@
 #' \code{\link{dir}}, \code{\link{readLines}}, and \code{\link{setdiff}} are the
 #' underlying functions performing the file and folder comparison.
 #'
-#' The \pkg{diffr} package provides a visually effective comparison of two files
-#' in HTML format. Unlike the \code{diff} function, however, \pkg{diffr} does
-#' not compare folders or return differences as native R objects.
+#' The \pkg{diffobj} and \pkg{diffr} packages provides visually effective
+#' comparisons of two files in specialized formats (S4, HTML). Unlike the
+#' \code{diff} function, however, they do not compare folders or return
+#' differences as plain R objects.
 #'
 #' @examples
 #' \dontrun{
@@ -110,7 +113,8 @@
 #' diff(A, B, ignore="^C", short=FALSE, simple=FALSE)  # long format
 #'
 #' # Compare one file that exists in both folders
-#' diff(x, y, "DESCRIPTION")  # same as diffs$DESCRIPTION
+#' diff(A, B, "DESCRIPTION")                       # same as diffs$DESCRIPTION
+#' diff(A, B, "INDEX", similar=TRUE, trimws=TRUE)  # trim whitespace
 #' }
 #'
 #' @aliases diff
@@ -119,7 +123,8 @@
 #' @export diff.character
 
 diff.character <- function(x, y, file=NULL, ignore=NULL, lines=FALSE,
-                           short=TRUE, similar=FALSE, simple=TRUE, ...)
+                           short=TRUE, similar=FALSE, simple=TRUE, trimws=FALSE,
+                           ...)
 {
   ## 1  Calculate A and B entries, containing filenames or lines of text
   if(dir.exists(x) && dir.exists(y))
@@ -135,7 +140,8 @@ diff.character <- function(x, y, file=NULL, ignore=NULL, lines=FALSE,
         {
           out[[f]] <- diff.character(file.path(x, f), file.path(y, f),
                                      ignore=ignore, lines=FALSE, short=short,
-                                     similar=similar, simple=simple, ...)
+                                     similar=similar, simple=simple,
+                                     trimws=trimws, ...)
         }
         if(simple)
           out <- out[!sapply(out, is.null)]
@@ -169,6 +175,13 @@ diff.character <- function(x, y, file=NULL, ignore=NULL, lines=FALSE,
   }
 
   ## 2  Compare
+  if(trimws)
+  {
+    A <- trimws(A)
+    A <- A[A != ""]
+    B <- trimws(B)
+    B <- B[B != ""]
+  }
   diffA <- if(similar) intersect(A, B) else setdiff(A, B)
   diffB <- if(similar) intersect(B, A) else setdiff(B, A)
   for(i in seq_along(ignore))
