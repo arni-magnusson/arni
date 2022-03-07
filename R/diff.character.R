@@ -69,7 +69,7 @@
 #' \code{\link{dir}}, \code{\link{readLines}}, and \code{\link{setdiff}} are the
 #' underlying functions performing the file and folder comparison.
 #'
-#' The \pkg{diffobj} and \pkg{diffr} packages provides visually effective
+#' The \pkg{diffobj} and \pkg{diffr} packages provide visually effective
 #' comparisons of two files in specialized formats (S4, HTML). Unlike the
 #' \code{diff} function, however, they do not compare folders or return
 #' differences as plain R objects.
