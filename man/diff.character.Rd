@@ -6,7 +6,7 @@
 \title{Compare Files}
 \usage{
 \method{diff}{character}(x, y, file = NULL, ignore = NULL, lines = FALSE,
-  short = TRUE, simple = TRUE, ...)
+  short = TRUE, similar = FALSE, simple = TRUE, ...)
 }
 \arguments{
 \item{x}{a file or folder name.}
@@ -23,6 +23,8 @@ compares the contents (lines) of files that exist in both folders,
 instead of listing filenames that are different between the folders.}
 
 \item{short}{whether to produce short file paths for the output.}
+
+\item{similar}{whether to show similarities instead of differences.}
 
 \item{simple}{whether to replace \code{character(0)} with \code{NULL} in
 output, for compact display.}
@@ -70,10 +72,10 @@ addition is:
       workshops.
 }
 
-The default \code{short = TRUE} and \code{simple = TRUE} are designed for
-interactive (human-readable) use, while \code{short = FALSE} and \code{simple
-= FALSE} gives long-format output that can be useful for scripted analyses of
-file differences.
+The \code{short} and \code{simple} defaults are designed for interactive
+(human-readable) use, while \code{short = FALSE} and \code{simple = FALSE}
+gives long-format output that can be useful for scripted analyses of file
+differences.
 }
 \examples{
 \dontrun{
@@ -82,12 +84,14 @@ file differences.
 write(c("We", "are", "not"), file="one.txt")
 write(c("We", "are", "the same"), file="two.txt")
 diff("one.txt", "two.txt")
+diff("one.txt", "two.txt", similar=TRUE)
 file.remove("one.txt", "two.txt")
 
 # Another example with two files
 x <- system.file("DESCRIPTION", package="base")
 y <- system.file("DESCRIPTION", package="stats")
 diff(x, y)
+diff(x, y, similar=TRUE)
 
 # Filter out noise
 diff(x, y, ignore=c("Package:", "Title:", "Description:", "Built:"))
@@ -95,15 +99,17 @@ diff(x, y, ignore=c("Package:", "Title:", "Description:", "Built:"))
 # Compare filenames in two folders
 A <- system.file(package="base")
 B <- system.file(package="stats")
-diff(A, B)               # these filenames are different
-diff(A, B, ignore="^C")  # exclude entries starting with C
+diff(A, B)                # these filenames are different
+diff(A, B, ignore="^C")   # exclude entries starting with C
+diff(A, B, similar=TRUE)  # these filenames exist in both folders
 
 # Compare content of files that exist in both folders
-diff(A, B, lines=TRUE)           # the INDEX files are very different
-diff(A, B, lines=TRUE, n=20)     # demonstrate passing n to readLines
-diffs <- diff(A, B, lines=TRUE)  # store comparison as list
-names(diffs)                     # these files are different
-str(diffs, vec.len=1)            # first difference in each file
+diff(A, B, lines=TRUE)                # the INDEX files are very different
+diff(A, B, lines=TRUE, similar=TRUE)  # but not completely different
+diff(A, B, lines=TRUE, n=20)          # demonstrate passing n to readLines
+diffs <- diff(A, B, lines=TRUE)       # store comparison as list
+names(diffs)                          # these files are different
+str(diffs, vec.len=1)                 # first difference in each file
 
 # Alternative format
 diff(A, B, ignore="^C")                             # short format
