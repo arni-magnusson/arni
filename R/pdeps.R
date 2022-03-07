@@ -36,9 +36,11 @@ pdeps <- function(packages, recursive=TRUE, reverse=FALSE, base=FALSE,
     pkgs <- lapply(pkgs, function(p)
       p[!(p %in% rownames(installed.packages(priority="high")))])
   if(!installed)
-    pkgs <- lapply(pkgs, function(p) p[!(p %in% rownames(installed.packages()))])
+    pkgs <-
+      lapply(pkgs, function(p) p[!(p %in% rownames(installed.packages()))])
   if(!available)
-    pkgs <- lapply(pkgs, function(p) p[!(p %in% rownames(available.packages()))])
+    pkgs <-
+      lapply(pkgs, function(p) p[!(p %in% rownames(available.packages()))])
 
   ## Format output
   pkgs <- pkgs[sapply(pkgs,length) > 0]  # remove empty elements
