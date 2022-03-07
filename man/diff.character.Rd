@@ -49,8 +49,8 @@ File and folder names are of class \code{character} so \code{diff("pathA",
 "pathB")} will dispatch this method to show the differences. There is no need
 to call \code{diff.character} explicitly; a plain \code{diff} will do.
 
-This function uses \code{setdiff} for the comparison, so line order and line
-numbers are ignored.
+This function uses \code{setdiff} for the comparison, so line order, line
+numbers, and repeated lines are ignored.
 
 Subfolders are excluded when comparing folders, but can be examined in
 subsequent calls.
@@ -92,15 +92,18 @@ diff(x, y)
 # Filter out noise
 diff(x, y, ignore=c("Package:", "Title:", "Description:", "Built:"))
 
-# Compare two folders
+# Compare filenames in two folders
 A <- system.file(package="base")
 B <- system.file(package="stats")
-diff(A, B)                         # these filenames are different
-diff(A, B, ignore="^C")            # exclude entries starting with C
-diffs <- diff(A, B, lines=TRUE)    # compare files that exist in both folders
-names(diffs)                       # the content of these files is different
-str(diffs)                         # summary of differences
-diffs                              # all lines that are different
+diff(A, B)               # these filenames are different
+diff(A, B, ignore="^C")  # exclude entries starting with C
+
+# Compare content of files that exist in both folders
+diff(A, B, lines=TRUE)           # the INDEX files are very different
+diff(A, B, lines=TRUE, n=20)     # demonstrate passing n to readLines
+diffs <- diff(A, B, lines=TRUE)  # store comparison as list
+names(diffs)                     # these files are different
+str(diffs, vec.len=1)            # first difference in each file
 
 # Alternative format
 diff(A, B, ignore="^C")                             # short format

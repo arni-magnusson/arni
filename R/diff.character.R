@@ -31,8 +31,8 @@
 #' "pathB")} will dispatch this method to show the differences. There is no need
 #' to call \code{diff.character} explicitly; a plain \code{diff} will do.
 #'
-#' This function uses \code{setdiff} for the comparison, so line order and line
-#' numbers are ignored.
+#' This function uses \code{setdiff} for the comparison, so line order, line
+#' numbers, and repeated lines are ignored.
 #'
 #' Subfolders are excluded when comparing folders, but can be examined in
 #' subsequent calls.
@@ -86,15 +86,18 @@
 #' # Filter out noise
 #' diff(x, y, ignore=c("Package:", "Title:", "Description:", "Built:"))
 #'
-#' # Compare two folders
+#' # Compare filenames in two folders
 #' A <- system.file(package="base")
 #' B <- system.file(package="stats")
-#' diff(A, B)                         # these filenames are different
-#' diff(A, B, ignore="^C")            # exclude entries starting with C
-#' diffs <- diff(A, B, lines=TRUE)    # compare files that exist in both folders
-#' names(diffs)                       # the content of these files is different
-#' str(diffs)                         # summary of differences
-#' diffs                              # all lines that are different
+#' diff(A, B)               # these filenames are different
+#' diff(A, B, ignore="^C")  # exclude entries starting with C
+#'
+#' # Compare content of files that exist in both folders
+#' diff(A, B, lines=TRUE)           # the INDEX files are very different
+#' diff(A, B, lines=TRUE, n=20)     # demonstrate passing n to readLines
+#' diffs <- diff(A, B, lines=TRUE)  # store comparison as list
+#' names(diffs)                     # these files are different
+#' str(diffs, vec.len=1)            # first difference in each file
 #'
 #' # Alternative format
 #' diff(A, B, ignore="^C")                             # short format
@@ -112,6 +115,7 @@
 diff.character <- function(x, y, file=NULL, ignore=NULL, lines=FALSE,
                            short=TRUE, simple=TRUE, ...)
 {
+  ## 1  Calculate A and B entries, containing filenames or lines of text
   if(dir.exists(x) && dir.exists(y))
   {
     if(is.null(file))
@@ -119,32 +123,37 @@ diff.character <- function(x, y, file=NULL, ignore=NULL, lines=FALSE,
       if(lines)
       {
         files <- intersect(dir(x), dir(y))
-        files <- files[!(files %in% list.dirs(x, full.names=FALSE))]  # no dirs
+        files <- files[!(files %in% list.dirs(x, full.names=FALSE))]  # -subdirs
         out <- list()
         for(f in files)
         {
-          out[[f]] <- diff.file(file.path(x,f), file.path(y,f), ignore=ignore,
-                                short=short, simple=simple, ...)
+          out[[f]] <- diff.character(file.path(x, f), file.path(y, f),
+                                     ignore=ignore, lines=FALSE, short=short,
+                                     simple=simple, ...)
         }
         names(out) <- files
         if(simple)
           out <- out[!sapply(out, is.null)]
-        out
+        return(out)
       }
       else
       {
-        diff.dir(x, y, ignore=ignore, short=short, simple=simple)
+        A <- dir(x)
+        A <- A[!(A %in% list.dirs(x, full.names=FALSE))]  # -subdirs
+        B <- dir(y)
+        B <- B[!(B %in% list.dirs(y, full.names=FALSE))]  # -subdirs
       }
     }
     else
     {
-      diff.file(file.path(x, file), file.path(y, file), ignore=ignore,
-                short=short, simple=simple, ...)
+      A <- readLines(file.path(x, file), ...)
+      B <- readLines(file.path(y, file), ...)
     }
   }
   else if(file.exists(x) && file.exists(y))
   {
-    diff.file(x, y, ignore=ignore, short=short, simple=simple, ...)
+    A <- readLines(x, ...)
+    B <- readLines(y, ...)
   }
   else
   {
@@ -153,42 +162,6 @@ diff.character <- function(x, y, file=NULL, ignore=NULL, lines=FALSE,
     if(!file.exists(y))
       stop("'", y, "'not found")
   }
-}
-
-diff.dir <- function(x, y, ignore=NULL, short=TRUE, simple=TRUE)
-{
-  ## 1  Read directories
-  A <- dir(x)
-  A <- A[!(A %in% list.dirs(x, full.names=FALSE))]  # no dirs
-  B <- dir(y)
-  B <- B[!(B %in% list.dirs(y, full.names=FALSE))]  # no dirs
-
-  ## 2  Compare
-  diffA <- setdiff(A, B)
-  diffB <- setdiff(B, A)
-  for(i in seq_along(ignore))
-  {
-    diffA <- grep(ignore[i], diffA, invert=TRUE, value=TRUE)
-    diffB <- grep(ignore[i], diffB, invert=TRUE, value=TRUE)
-  }
-  out <- list(diffA, diffB)
-  names(out) <- if(short) short.name(x, y) else c(x, y)
-
-  ## 3  Replace character(0) with NULL
-  if(simple)
-  {
-    out[sapply(out, length) == 0] <- NULL
-    if(length(out) == 0)
-      out <- NULL
-  }
-  out
-}
-
-diff.file <- function(x, y, ignore=NULL, short=TRUE, simple=TRUE, ...)
-{
-  ## 1  Read files
-  A <- readLines(x, ...)
-  B <- readLines(y, ...)
 
   ## 2  Compare
   diffA <- setdiff(A, B)
