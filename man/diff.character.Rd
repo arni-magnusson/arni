@@ -50,15 +50,9 @@ If \code{x} and \code{y} are files (and not folders), the \code{file} and
 \code{lines} arguments are not applicable and will be ignored.
 }
 \note{
-File and folder names are of class \code{character} so \code{diff("pathA",
-"pathB")} will dispatch this method to show the differences. There is no need
-to call \code{diff.character} explicitly; a plain \code{diff} will do.
-
 This function uses \code{setdiff} for the comparison, so line order, line
-numbers, and repeated lines are ignored.
-
-Subfolders are excluded when comparing folders, but can be examined in
-subsequent calls.
+numbers, and repeated lines are ignored. Subfolders are excluded when
+comparing folders, but can be examined in subsequent calls.
 
 This function has very basic features compared to full GUI applications such
 as \emph{WinMerge} (Windows), \emph{Meld} (Linux, Windows), \emph{Kompare}
@@ -70,15 +64,13 @@ addition is:
 \item a quick diff tool that is handy during an interactive R session,
 \item a programmatic interface to analyze file differences as native R
       objects, and
-\item a tool that works on all operating systems, regardless of what software
-      may be installed, which can be practical for teamwork and online
-      workshops.
+\item a tool that works on all platforms, regardless of what software may be
+      installed.
 }
 
 The \code{short} and \code{simple} defaults are designed for interactive
 (human-readable) use, while \code{short = FALSE} and \code{simple = FALSE}
-gives long-format output that can be useful for scripted analyses of file
-differences.
+produces a consistent number of list elements and retains longer paths.
 }
 \examples{
 \dontrun{
