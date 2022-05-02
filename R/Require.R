@@ -6,6 +6,8 @@
 #'
 #' @return Logical indicating whether the package is ready to be loaded.
 #'
+#' @importFrom utils install.packages installed.packages
+#'
 #' @export
 
 Require <- function(package)
