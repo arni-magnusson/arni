@@ -16,6 +16,7 @@
 #' @importFrom stats terms
 #'
 #' @export
+#' @export plot.loess
 
 plot.loess <- function(x, lwd=2, line.col="black", xlim=NULL, ylim=NULL,
                        xlab=NULL, ylab=NULL, ...)

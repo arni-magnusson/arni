@@ -8,6 +8,7 @@
 #' @return \code{NULL}, but line is added to plot.
 #'
 #' @export
+#' @export lines.loess
 
 lines.loess <- function(x, ...)
 {

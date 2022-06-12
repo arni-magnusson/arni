@@ -1,6 +1,6 @@
 Package: arni
-Version: 22.05.02
-Date: 2022-05-02
+Version: 22.06.12
+Date: 2022-06-12
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"), email="thisisarni@gmail.com"))
 Imports: graphics, lattice, methods, stats, tools, utils,
@@ -9,5 +9,5 @@ Suggests: caTools
 Description: A collection of handy tools.
 License: GPL (>= 2)
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Roxygen: list(old_usage=TRUE)
