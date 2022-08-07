@@ -4,7 +4,8 @@
 \alias{plotcorr.col}
 \title{Plot Correlation}
 \usage{
-plotcorr.col(corr, pow = 4, type = "lower", order.fun = NULL, col = "col", ...)
+plotcorr.col(corr, pow = 4, type = "lower", order.fun = NULL,
+  col = "col", ...)
 }
 \arguments{
 \item{corr}{a correlation matrix.}

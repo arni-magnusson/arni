@@ -4,7 +4,8 @@
 \alias{sort.data.frame}
 \title{Sort Data Frame}
 \usage{
-\method{sort}{data.frame}(x, decreasing = FALSE, by = seq_along(x), na.last = TRUE, ...)
+\method{sort}{data.frame}(x, decreasing = FALSE, by = seq_along(x),
+  na.last = TRUE, ...)
 }
 \arguments{
 \item{x}{a data frame.}

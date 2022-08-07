@@ -4,7 +4,8 @@
 \alias{roundp}
 \title{Round Proportions}
 \usage{
-roundp(x, digits = NULL, seats = NULL, method = "SL", labels = names(x))
+roundp(x, digits = NULL, seats = NULL, method = "SL",
+  labels = names(x))
 }
 \arguments{
 \item{x}{a vector containing proportions (or votes from an election).}
