@@ -43,7 +43,6 @@ pdeps <- function(packages, recursive=TRUE, reverse=FALSE, base=FALSE,
       lapply(pkgs, function(p) p[!(p %in% rownames(available.packages()))])
 
   ## Format output
-  pkgs <- pkgs[sapply(pkgs,length) > 0]  # remove empty elements
   if(sort)
     pkgs <- lapply(pkgs, sort)
 
