@@ -15,8 +15,10 @@
 #' @note
 #' Based on an S News email from Xiangyang Liu, 7 Aug 1995.
 #'
-#' As pointed out in the \verb{R-faq.pdf}, \code{x[order(x$a,-x$b),]} can also
-#' be used to sort by multiple columns.
+#' As pointed out in the \verb{R-FAQ}, \code{x[order(x$a,-x$b),]} can also be
+#' used to sort by multiple columns. That approach, using the minus sign to
+#' reverse the sort order, will not work for string variables unless they are
+#' wrapped inside \code{rank}: \code{x[order(x$a,-rank(x$b)),]}.
 #'
 #' @export
 #' @export sort.data.frame
