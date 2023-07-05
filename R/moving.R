@@ -24,7 +24,8 @@
 #' This function is mainly useful if the ends have flat trends, e.g. a diagonal
 #' line will have bent ends...
 #'
-#' @seealso \code{\link[caTools]{runmean}}.
+#' @seealso
+#' \code{\link[caTools]{runmean}}.
 #'
 #' @importFrom stats weighted.mean
 #'
