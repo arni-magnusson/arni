@@ -15,6 +15,21 @@ List of palettes.
 \description{
 Show system palettes.
 }
+\examples{
+showPalettes()
+showPalettes("Tableau")
+
+f <- function() barplot(rep(1, 9), col=col)
+par(mfrow=c(2, 3))
+col <- palette.colors(9, "Set 1"); f()
+col <- palette.colors(9, "Tableau"); f()
+col <- palette.colors(9, "Classic Tableau"); f()
+col <- palette.colors(9, "Paired"); f()
+col <- palette.colors(9, "Alphabet"); f()
+col <- palette.colors(9, "Polychrome"); f()
+par(mfrow(c(1, 1))
+
+}
 \seealso{
 \code{\link{showColors}}.
 }
