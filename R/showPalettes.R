@@ -17,7 +17,7 @@
 #' par(mfrow=c(2, 3))
 #' col <- palette.colors(9, "Set 1"); f()
 #' col <- palette.colors(9, "Tableau"); f()
-#' col <- palette.colors(9, "Classic Tableau"); f()
+#' col <- palette.colors(9, "Classic"); f()
 #' col <- palette.colors(9, "Paired"); f()
 #' col <- palette.colors(9, "Alphabet"); f()
 #' col <- palette.colors(9, "Polychrome"); f()
