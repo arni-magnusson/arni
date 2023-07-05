@@ -10,7 +10,7 @@
 #' \code{\link{showColors}}.
 #'
 #' @importFrom graphics barplot par title
-#' @importFrom grDevices palettePals palette.colors
+#' @importFrom grDevices palette.pals palette.colors
 #'
 #' @export
 
