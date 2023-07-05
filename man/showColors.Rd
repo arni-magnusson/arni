@@ -19,3 +19,6 @@ Show all X11 colors.
 Based on script presented by Kyle Ambert and Steven Bedrick in BMI 507/607,
 Lecture 10 (30 Oct 2009).
 }
+\seealso{
+\code{\link{showPalettes}}.
+}

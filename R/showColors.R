@@ -10,6 +10,9 @@
 #' Based on script presented by Kyle Ambert and Steven Bedrick in BMI 507/607,
 #' Lecture 10 (30 Oct 2009).
 #'
+#' @seealso
+#' \code{\link{showPalettes}}.
+#'
 #' @importFrom graphics plot.new rect
 #' @importFrom grDevices col2rgb colors
 #'
