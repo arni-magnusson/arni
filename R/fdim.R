@@ -10,5 +10,8 @@
 
 fdim <- function(x)
 {
-  setNames(dim(x), names(dimnames(x)))
+  if(is(x, "FLQuant"))
+    setNames(dim(x), names(dimnames(x)))
+  else
+    sapply(x, function(col) length(unique(col)))[-ncol(x)]
 }
