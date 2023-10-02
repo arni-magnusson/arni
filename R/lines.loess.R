@@ -7,6 +7,8 @@
 #'
 #' @return \code{NULL}, but line is added to plot.
 #'
+#' @importFrom graphics lines
+#'
 #' @export
 #' @export lines.loess
 

@@ -15,7 +15,7 @@
 #' \item{full}{all installed packages}
 #' if \code{full = TRUE}.
 #'
-#' @importFrom stats addmargins aggregate
+#' @importFrom stats addmargins aggregate xtabs
 #' @importFrom utils contrib.url packageStatus
 #'
 #' @export

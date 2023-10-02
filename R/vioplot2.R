@@ -21,8 +21,9 @@
 #' @seealso
 #' \pkg{vioplot} package that doesn't support lists.
 #'
-#' @importFrom graphics box plot.window polygon
+#' @importFrom graphics axis box plot.window polygon
 #' @importFrom grDevices rainbow
+#' @importFrom stats density
 #'
 #' @export
 

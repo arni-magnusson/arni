@@ -17,7 +17,7 @@
 #' Shapiro-Wilk test is used, as it seems to be preferred over the traditional
 #' G-test and Kolmogorov-Smirnov test.
 #'
-#' @importFrom graphics hist points
+#' @importFrom graphics hist points lines
 #' @importFrom stats shapiro.test
 #'
 #' @export
