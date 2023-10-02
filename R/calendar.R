@@ -16,6 +16,7 @@
 #' @return Vector of radians (\code{cos} and \code{sin} give day coordinates).
 #'
 #' @importFrom graphics symbols segments text
+#' @importFrom grDevices dev.off
 #'
 #' @export
 

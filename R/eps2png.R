@@ -12,6 +12,8 @@
 #'
 #' @note Requires shell scripts \code{2png} and \code{optipng}.
 #'
+#' @importFrom tools file_path_sans_ext
+#'
 #' @export
 
 eps2png <- function(epsfile, dpi=300, gray=FALSE, ag=4, at=4)
