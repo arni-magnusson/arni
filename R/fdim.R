@@ -6,6 +6,9 @@
 #'
 #' @return Named vector showing the dimensions of an FLR object.
 #'
+#' @importFrom methods is
+#' @importFrom stats setNames
+#'
 #' @export
 
 fdim <- function(x)
