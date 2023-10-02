@@ -7,7 +7,7 @@
 #'
 #' @return Vector of colors as hexadecimal string.
 #'
-#' @importFrom grDevices col2rgb rgb2hsv
+#' @importFrom grDevices col2rgb hsv rgb2hsv
 #'
 #' @export
 
