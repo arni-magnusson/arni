@@ -12,7 +12,7 @@
 #'
 #' @note Somewhat similar to \code{plot.data.frame} in S-Plus.
 #'
-#' @importFrom graphics pairs
+#' @importFrom graphics pairs par
 #'
 #' @export
 
