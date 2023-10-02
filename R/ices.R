@@ -16,6 +16,7 @@
 #'
 #' @note The coordinates were inferred from official ICES maps.
 #'
+#' @importFrom graphics text
 #' @importFrom utils as.roman
 #' @importFrom maps map
 #'

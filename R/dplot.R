@@ -16,7 +16,7 @@
 #'
 #' @author Alistair Dunn, with minor changes by Arni Magnusson.
 #'
-#' @importFrom graphics axis lines
+#' @importFrom graphics axis lines segments
 #' @importFrom stats density
 #'
 #' @export

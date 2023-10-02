@@ -16,7 +16,7 @@
 #'
 #' @note Borrowed from package \code{sfsmisc}, adding \code{border} argument.
 #'
-#' @importFrom graphics polygon xyinch
+#' @importFrom graphics polygon segments xyinch
 #'
 #' @export
 

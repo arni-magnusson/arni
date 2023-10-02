@@ -13,7 +13,7 @@
 #' @seealso
 #' \code{\link{showPalettes}}.
 #'
-#' @importFrom graphics plot.new rect
+#' @importFrom graphics plot.new rect text
 #' @importFrom grDevices col2rgb colors
 #'
 #' @export
