@@ -11,6 +11,8 @@
 #' @seealso
 #' \code{\link{hclDemo}}, \code{\link{hsvDemo}}.
 #'
+#' @importFrom graphics par
+#'
 #' @export
 
 rgbDemo <- function(n=40, cex=1, bg="black")

@@ -13,7 +13,7 @@
 #'
 #' @return \code{NULL}, but a plot is drawn.
 #'
-#' @importFrom graphics plot lines
+#' @importFrom graphics lines
 #' @importFrom stats terms
 #'
 #' @export
