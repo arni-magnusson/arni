@@ -8,6 +8,8 @@ showPalettes(palette = NULL, cex = 1)
 }
 \arguments{
 \item{palette}{palette name, or \code{NULL} to show all palettes.}
+
+\item{cex}{text size for main title.}
 }
 \value{
 List of palettes.

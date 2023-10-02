@@ -3,6 +3,7 @@
 #' Show system palettes.
 #'
 #' @param palette palette name, or \code{NULL} to show all palettes.
+#' @param cex text size for main title.
 #'
 #' @return List of palettes.
 #'
