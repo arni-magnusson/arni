@@ -25,8 +25,9 @@ The optimal x is the peak or bottom of the quadratic curve. See p. 54 in
 Magnusson (2002).
 }
 \references{
-Magnusson, A. (2002) \emph{Survival rates of coho (Oncorhynchus kisutch) and
-chinook salmon (O. tshawytscha) released from hatcheries on the U.S. and
-Canadian Pacific coast 1972--1998, with respect to climate and habitat
-effects.} M.S. thesis, University of Washington.
+Magnusson, A. (2002).
+\emph{Survival rates of coho (Oncorhynchus kisutch) and chinook salmon (O.
+tshawytscha) released from hatcheries on the U.S. and Canadian Pacific coast
+1972--1998, with respect to climate and habitat effects.}
+M.S. thesis, University of Washington.
 }

@@ -22,12 +22,14 @@ Large value of \eqn{K} indicates lower diversity.
 to be identical.
 }
 \references{
-Yule, G. U. (1944) \emph{The statistical study of literary vocabulary.}
+Yule, G.U. (1944).
+\emph{The statistical study of literary vocabulary.}
 Cambridge University Press, Cambridge.
 
-McElduff, F., Mateos, P., Wade, A. and Borja, M. C. (2008) What's in a name?
-The frequency and geographic distributions of UK surnames.
+McElduff, F., Mateos, P., Wade, A., and Borja, M.C. (2008).
+What's in a name? The frequency and geographic distributions of UK surnames.
 \emph{Significance}, \bold{5}, 189--192.
+\doi{10.1111/j.1740-9713.2008.00332.x}
 }
 \seealso{
 \code{\link{shannon}}.

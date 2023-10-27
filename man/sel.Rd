@@ -26,7 +26,9 @@ The shape parameter for each slope is log variance. Use \code{-15} for
 knife-edge and \code{15} for flat selectivity.
 }
 \references{
-Hilborn, R., Maunder, M., Parma, A., Ernst, B., Payne, J. and Starr, P.
-(2003) \emph{Coleraine: A generalized age-structured stock assessment model.
-User's manual version 2.0.} University of Washington Report SAFS-UW-0116.
+Hilborn, R., Maunder, M., Parma, A., Ernst, B., Payne, J., and Starr, P.
+(2003).
+\emph{Coleraine: A generalized age-structured stock assessment model. User's
+manual version 2.0.}
+University of Washington Report SAFS-UW-0116.
 }
