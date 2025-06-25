@@ -7,7 +7,7 @@
 #'
 #' @return Standard deviation, as a single number.
 #'
-#' @note Useful to evaluate MLE of \eqn{sigma}.
+#' @note Useful to evaluate MLE of \eqn{\sigma}.
 #'
 #' @export
 

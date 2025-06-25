@@ -18,5 +18,5 @@ Standard deviation, as a single number.
 Calculate standard deviation based on entire population.
 }
 \note{
-Useful to evaluate MLE of \eqn{sigma}.
+Useful to evaluate MLE of \eqn{\sigma}.
 }
