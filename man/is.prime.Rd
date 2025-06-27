@@ -18,5 +18,5 @@ Logical specifying whether number is a prime number.
 Test whether number is a prime number.
 }
 \seealso{
-\code{primes} in the \pkg{sfsmisc} package.
+\code{factorize} and \code{primes} in the \pkg{sfsmisc} package.
 }

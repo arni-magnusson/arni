@@ -8,7 +8,7 @@
 #' @return Logical specifying whether number is a prime number.
 #'
 #' @seealso
-#' \code{primes} in the \pkg{sfsmisc} package.
+#' \code{factorize} and \code{primes} in the \pkg{sfsmisc} package.
 #'
 #' @export
 
@@ -21,21 +21,23 @@ is.prime <- function(n, verbose=FALSE)
   else
   {
     if(n < 2)
-      return(FALSE)  # n<2 is not a prime number
+      return(FALSE)  # n < 2 is not a prime number
     if(n == 2)
-      return(TRUE)   # n=2 is a prime number
-    if(n%%2 == 0)
+      return(TRUE)   # n = 2 is a prime number
+    if(n %% 2 == 0)
     {
-      if(verbose) cat(n, "is divisible by 2\n")  # n>2 and even is not prime
+      if(verbose)
+        cat(n, "is divisible by 2\n")  # n > 2 and even is not prime
       return(FALSE)
     }
 
     div <- 3
     while(div <= sqrt(n))  # test odd numbers from 3 to sqrt(n)
     {
-      if(n%%div == 0)
+      if(n %% div == 0)
       {
-        if(verbose) cat(n, " is divisible by ", div, "\n", sep="")
+        if(verbose)
+          cat(n, " is divisible by ", div, "\n", sep="")
         return(FALSE)  # divisor found
       }
       div <- div + 2
