@@ -1,6 +1,6 @@
 Package: arni
-Version: 25.06.27
-Date: 2025-06-27
+Version: 25.09.29
+Date: 2025-09-29
 Title: Arni's Toolbox
 Authors@R: c(person("Arni", "Magnusson", role=c("aut","cre"), email="thisisarni@gmail.com"))
 Imports: graphics, lattice, methods, stats, tools, utils,
