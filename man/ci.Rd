@@ -15,7 +15,7 @@ ci(x, level = 0.95)
 Confidence bounds, a named vector of two elements.
 }
 \description{
-Generate empirical confidence interval from a vector of iterations, e.g.
+Generate empirical confidence interval from a vector of iterations, e.g.,
 bootstrap or MCMC.
 }
 \note{

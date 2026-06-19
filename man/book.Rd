@@ -25,7 +25,7 @@ The PDF files should be named something like \file{0.pdf 1.pdf 27.pdf 42.pdf
 ... 397.pdf 413a.pdf 413b.pdf}.
 
 Before this function is called, unnecessary pages can be peeled out of
-\file{0.pdf}, and the last file often needs splitting, e.g. \file{413.pdf}
+\file{0.pdf}, and the last file often needs splitting, e.g., \file{413.pdf}
 into \file{413a.pdf} and \file{413b.pdf}.
 
 Three files are written to directory: \file{_} (blank page of right size),

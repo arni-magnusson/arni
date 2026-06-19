@@ -17,7 +17,7 @@ correlations.}
 \code{"lower"}, or \code{"upper"}.}
 
 \item{order.fun}{a function to reorder variables w.r.t. absolute
-correlations: e.g. \code{mean}, \code{median}, or \code{max}.}
+correlations: e.g., \code{mean}, \code{median}, or \code{max}.}
 
 \item{col}{either \code{"bw"}, \code{"col"}, or a vector/matrix of colors.}
 

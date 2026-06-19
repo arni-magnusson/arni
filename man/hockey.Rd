@@ -13,7 +13,7 @@ hockey(S, Smax, Rmax, eta = 0)
 
 \item{Rmax}{maximum recruitment.}
 
-\item{eta}{an optional smoothness parameter, e.g. \code{0.001}.}
+\item{eta}{an optional smoothness parameter, e.g., \code{0.001}.}
 }
 \value{
 Recruitment as a number or vector.

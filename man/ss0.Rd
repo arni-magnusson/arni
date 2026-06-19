@@ -15,7 +15,7 @@ ss0(x, na.rm = FALSE)
 Sum of squared values, as a single number.
 }
 \description{
-Calculate sum of squared values, e.g. RSS.
+Calculate sum of squared values, e.g., RSS.
 }
 \note{
 \code{RSS = ss0(resid)}, not \code{ssmean(resid)}.

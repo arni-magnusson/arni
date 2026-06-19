@@ -1,6 +1,6 @@
 #' Sum of Squares
 #'
-#' Calculate sum of squared values, e.g. RSS.
+#' Calculate sum of squared values, e.g., RSS.
 #'
 #' @param x a numeric vector.
 #' @param na.rm whether \code{NA} values should be stripped.

@@ -2,7 +2,7 @@
 #'
 #' Calculate Yule's characteristic \eqn{K}.
 #'
-#' @param x a vector of labels, e.g. people names or words in a book.
+#' @param x a vector of labels, e.g., people names or words in a book.
 #'
 #' @return
 #' \eqn{K} as a single value.

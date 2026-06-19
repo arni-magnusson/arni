@@ -32,7 +32,7 @@ Alternative \code{end} treatments are:
 If \code{k} is an even number, a weighted average is used with half weights
 on each end.
 
-This function is mainly useful if the ends have flat trends, e.g. a diagonal
+This function is mainly useful if the ends have flat trends, e.g., a diagonal
 line will have bent ends...
 }
 \seealso{

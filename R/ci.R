@@ -1,6 +1,6 @@
 #' Confidence Interval
 #'
-#' Generate empirical confidence interval from a vector of iterations, e.g.
+#' Generate empirical confidence interval from a vector of iterations, e.g.,
 #' bootstrap or MCMC.
 #'
 #' @param x a vector of iterations.

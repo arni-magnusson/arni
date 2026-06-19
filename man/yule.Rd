@@ -7,7 +7,7 @@
 yule(x)
 }
 \arguments{
-\item{x}{a vector of labels, e.g. people names or words in a book.}
+\item{x}{a vector of labels, e.g., people names or words in a book.}
 }
 \value{
 \eqn{K} as a single value.
